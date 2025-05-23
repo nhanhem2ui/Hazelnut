@@ -1,0 +1,142 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Dotnet\\Hazelnut\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7A75C49E-A985-4FBF-B7B3-69709B68CB46}|Hazelnut.csproj|e:\\dotnet\\hazelnut\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A75C49E-A985-4FBF-B7B3-69709B68CB46}|Hazelnut.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A75C49E-A985-4FBF-B7B3-69709B68CB46}|Hazelnut.csproj|e:\\dotnet\\hazelnut\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7A75C49E-A985-4FBF-B7B3-69709B68CB46}|Hazelnut.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A75C49E-A985-4FBF-B7B3-69709B68CB46}|Hazelnut.csproj|e:\\dotnet\\hazelnut\\models\\viewmodels\\indexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A75C49E-A985-4FBF-B7B3-69709B68CB46}|Hazelnut.csproj|solutionrelative:models\\viewmodels\\indexviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A75C49E-A985-4FBF-B7B3-69709B68CB46}|Hazelnut.csproj|e:\\dotnet\\hazelnut\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A75C49E-A985-4FBF-B7B3-69709B68CB46}|Hazelnut.csproj|solutionrelative:database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A75C49E-A985-4FBF-B7B3-69709B68CB46}|Hazelnut.csproj|e:\\dotnet\\hazelnut\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A75C49E-A985-4FBF-B7B3-69709B68CB46}|Hazelnut.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A75C49E-A985-4FBF-B7B3-69709B68CB46}|Hazelnut.csproj|e:\\dotnet\\hazelnut\\models\\productbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A75C49E-A985-4FBF-B7B3-69709B68CB46}|Hazelnut.csproj|solutionrelative:models\\productbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 275,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "E:\\Dotnet\\Hazelnut\\Database\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Database\\AppDbContext.cs",
+              "ToolTip": "E:\\Dotnet\\Hazelnut\\Database\\AppDbContext.cs",
+              "RelativeToolTip": "Database\\AppDbContext.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAswCgAAADtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T03:36:41.999Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "E:\\Dotnet\\Hazelnut\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "E:\\Dotnet\\Hazelnut\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T15:00:07.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:469269523:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1074509099:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IndexViewModel.cs",
+              "DocumentMoniker": "E:\\Dotnet\\Hazelnut\\Models\\ViewModels\\IndexViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\IndexViewModel.cs",
+              "ToolTip": "E:\\Dotnet\\Hazelnut\\Models\\ViewModels\\IndexViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\IndexViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T12:03:15.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductBase.cs",
+              "DocumentMoniker": "E:\\Dotnet\\Hazelnut\\Models\\ProductBase.cs",
+              "RelativeDocumentMoniker": "Models\\ProductBase.cs",
+              "ToolTip": "E:\\Dotnet\\Hazelnut\\Models\\ProductBase.cs",
+              "RelativeToolTip": "Models\\ProductBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T11:56:45.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Dotnet\\Hazelnut\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\Dotnet\\Hazelnut\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAADIBAAAAAAAAAAAAAEEBAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T15:42:31.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Dotnet\\Hazelnut\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Dotnet\\Hazelnut\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAmwEIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T03:33:47.81Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

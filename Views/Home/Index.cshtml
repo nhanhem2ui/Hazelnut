@@ -1,0 +1,377 @@
+﻿@{
+	ViewData["Title"] = "Index";
+	Layout = "_Layout";
+}
+@model Hazelnut.Models.ViewModels.IndexViewModel
+
+<h1 style="display:none;">Trang chủ</h1>
+
+	<section class="section block-sp" id="section_698767634">
+	    <div class="bg section-bg fill bg-fill  bg-loaded">
+	    </div>
+	    <div class="section-content relative">
+	        <div class="row" id="row-1874802226">
+	            <div id="col-1073016600" class="col col-sp col-no-padding small-12 large-12">
+	                <div class="col-inner">
+	                    <div class="container section-title-container" style="margin-bottom:5px;">
+	                        <h2 class="section-title section-title-normal">
+	                            <b></b>
+	                            <span class="section-title-main" style="font-size:90%;">GIấy vệ sinh cuộn lớn</span>
+	                            <b></b>
+	                            <a href="/danh-muc/giay-ve-sinh-cuon-lon/" target="">Xem thêm<i class="icon-angle-right"></i></a>
+	                        </h2>
+	                    </div>
+	
+	                    <div class="row  equalize-box large-columns-4 medium-columns-3 small-columns-2 row-small has-shadow row-box-shadow-1 slider row-slider slider-nav-simple slider-nav-push"
+	                        data-flickity-options="{" true,="" "groupcells":="" "100%",="" "dragthreshold"="" :="" 5,="" "cellalign":="" "left","wraparound":="" true,"prevnextbuttons":="" true,"percentposition":="" true,"pagedots":="" false,="" "righttoleft":="" "autoplay"="" false}"="">
+					@foreach (var item in Model.ToiletPapers)
+					{
+						<div class="col">
+							<div class="col-inner">
+								<div class="badge-container absolute left top z-1">
+								</div>
+								<div class="product-small box has-hover box-normal box-text-bottom">
+									<div class="box-image">
+										<div class="image-cover" style="padding-top:100%;">
+											<a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" aria-label="@item.Name">
+												<img loading="lazy" decoding="async" width="500" height="500" src="@item.ImagePath" class="attachment-original size-original" alt="" srcset="@item.ImagePathLarge, @item.ImagePathMedium, @item.ImagePathSmall" sizes="(max-width: 500px) 100vw, 500px">
+											</a>
+										</div>
+										<div class="image-tools top right show-on-hover">
+										</div>
+										<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
+										</div>
+									</div>
+
+									<div class="box-text text-center">
+										<div class="title-wrapper">
+											<p class="name product-title woocommerce-loop-product__title">
+												<a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
+											</p>
+										</div>
+										<div class="price-wrapper">
+											<span class="price">
+												<span class="gia-lien-he">Giá: @item.Price</span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					}
+				</div>
+			</div>
+		</div>
+		<style>
+			#col-1073016600 > .col-inner {
+				border-radius: 5px;
+			}
+			</style>
+			
+			<style>
+			#row-1874802226 > .col > .col-inner {
+			    padding: 15px 15px 10px 15px;
+			    background-color: rgb(255,255,255);
+			}
+			</style>
+			
+			<style>
+			#section_698767634 {
+			    padding-top: 15px;
+			    padding-bottom: 15px;
+			}
+			</style>
+	<section class="section block-sp" id="section_1119211531">
+			<div class="bg section-bg fill bg-fill bg-loaded"></div>
+	</section>
+
+<div class="section-content relative" style="margin-left : 15px">
+	<div class="row" id="row-639768552">
+		<div id="col-1416254942" class="col col-sp col-no-padding small-12 large-12">
+			<div class="col-inner">
+				<div class="container section-title-container" style="margin-bottom:5px;">
+				  <h2 class="section-title section-title-normal">
+				    <b></b>
+				    <span class="section-title-main" style="font-size:90%;">Giấy vệ sinh cuộn nhỏ</span>
+				    <b></b>
+				    <a href="#" target="">Xem thêm<i class="icon-angle-right"></i></a>
+				  </h2>
+				</div>
+	
+			<div class="row equalize-box large-columns-4 medium-columns-3 small-columns-2 row-small has-shadow row-box-shadow-1">
+					@foreach (var item in Model.SmallToiletPapers)
+					{
+						<div class="col">
+							<div class="col-inner">
+								<div class="badge-container absolute left top z-1"></div>
+								<div class="product-small box has-hover box-normal box-text-bottom">
+									<div class="box-image">
+										<div class="image-cover" style="padding-top:100%;">
+											<a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" aria-label="@item.Name">
+												<img loading="lazy" decoding="async" width="666" height="375" src="@item.ImagePath" class="attachment-original size-original" alt="" srcset="@item.ImagePathLarge, @item.ImagePathMedium, @item.ImagePathSmall" sizes="(max-width: 666px) 100vw, 666px">
+											</a>
+										</div>
+										<div class="image-tools top right show-on-hover"></div>
+										<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover"></div>
+									</div>
+									<div class="box-text text-center">
+										<div class="title-wrapper">
+											<p class="name product-title woocommerce-loop-product__title">
+												<a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
+											</p>
+										</div>
+										<div class="price-wrapper">
+											<span class="price"><span class="gia-lien-he">Giá: @item.Price</span></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					}
+			</div>
+	    </div>
+	</div>
+</div>
+	<style>
+	#col-1416254942 > .col-inner {
+	  border-radius: 5px;
+	}
+	</style>
+		</div>
+	<style>
+	#row-639768552 > .col > .col-inner {
+	  padding: 15px 15px 10px 15px;
+	  background-color: rgb(255,255,255);
+	}
+	</style>
+	</div>
+	</div>
+
+	<style>
+	#section_1119211531 {
+	  padding-top: 15px;
+	  padding-bottom: 15px;
+	}
+	</style>
+</section>
+<section class="section block-sp" id="section_1047489483">
+    <div class="bg section-bg fill bg-fill bg-loaded"></div>
+
+    <div class="section-content relative">
+        <div class="row" id="row-639466548">
+            <div id="col-1358605855" class="col col-sp col-no-padding small-12 large-12">
+
+                <div class="col-inner">
+                    <div class="container section-title-container" style="margin-bottom:5px;">
+                        <h2 class="section-title section-title-normal">
+                            <b></b>
+                            <span class="section-title-main" style="font-size:90%;">Giấy ăn</span>
+                            <b></b>
+                            <a href="/danh-muc/giay-an/" target="">Xem thêm<i class="icon-angle-right"></i></a>
+                        </h2>
+                    </div>
+
+                    <div class="row equalize-box large-columns-4 medium-columns-3 small-columns-2 row-small has-shadow row-box-shadow-1">
+                        @foreach (var item in Model.Napkins)
+                        {
+                            <div class="col">
+                                <div class="col-inner">
+                                    <div class="badge-container absolute left top z-1"></div>
+                                    <div class="product-small box has-hover box-normal box-text-bottom">
+                                        <div class="box-image">
+                                            <div class="image-cover" style="padding-top:100%;">
+                                                <a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" aria-label="@item.Name">
+                                                    <img loading="lazy" decoding="async" width="349" height="351" src="@item.ImagePath" class="attachment-original size-original" alt="" srcset="@item.ImagePathLarge, @item.ImagePathMedium, @item.ImagePathSmall" sizes="(max-width: 349px) 100vw, 349px">
+                                                </a>
+                                            </div>
+                                            <div class="image-tools top right show-on-hover"></div>
+                                            <div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover"></div>
+                                        </div>
+                                        <div class="box-text text-center">
+                                            <div class="title-wrapper">
+                                                <p class="name product-title woocommerce-loop-product__title">
+                                                    <a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
+                                                </p>
+                                            </div>
+                                            <div class="price-wrapper">
+                                                <span class="price"><span class="gia-lien-he">Giá: @item.Price</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <style>
+                        #col-1358605855 > .col-inner {
+                            border-radius: 5px;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+		
+        <div class="row" id="row-639466549" style="padding : 15px; margin-top : 15px; background-color : white">
+			<div id="col-1381037181" class="col col-sp col-no-padding small-12 large-12">
+				<div class="col-inner">
+				    <div class="container section-title-container" style="margin-bottom:5px;">
+				        <h2 class="section-title section-title-normal">
+				            <b></b>
+				            <span class="section-title-main" style="font-size:90%;">Giấy lau tay</span>
+				            <b></b>
+				            <a href="/danh-muc/giay-lau-tay/" target="">Xem thêm<i class="icon-angle-right"></i></a>
+				        </h2>
+				    </div>
+
+					<div class="row equalize-box large-columns-4 medium-columns-3 small-columns-2 row-small has-shadow row-box-shadow-1">
+					    @foreach (var item in Model.PaperHandkerchiefs)
+					    {
+					        <div class="col">
+					            <div class="col-inner">
+					                <div class="badge-container absolute left top z-1"></div>
+					                <div class="product-small box has-hover box-normal box-text-bottom">
+					                    <div class="box-image">
+					                        <div class="image-cover" style="padding-top:100%;">
+					                            <a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" aria-label="@item.Name">
+					                                    <img loading="lazy" decoding="async" width="479" height="359" src="@item.ImagePath" srcset="@item.ImagePathLarge, @item.ImagePathMedium, @item.ImagePathSmall" class="attachment-original size-original" alt="">
+					                                </a>
+					                            </div>
+					                            <div class="image-tools top right show-on-hover"></div>
+					                            <div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover"></div>
+					                        </div>
+					                        <div class="box-text text-center">
+					                            <div class="title-wrapper">
+					                                <p class="name product-title woocommerce-loop-product__title">
+					                                    <a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
+					                                </p>
+					                            </div>
+					                            <div class="price-wrapper">
+					                                <span class="price">
+					                                    <span class="gia-lien-he">Giá: @item.Price</span>
+					                                </span>
+					                            </div>
+					                        </div>
+					                    </div>
+					                </div>
+					            </div>
+					        }
+					</div>
+					    <style>
+					        #col-1381037181 > .col-inner {
+					            border-radius: 5px;
+					        }
+					    </style>
+				</div>
+			</div>
+		</div>
+
+	
+    <div class="row" id="row-639466550" style="padding : 15px; margin-top : 15px; background-color : white">
+        <div id="col-1857065369" class="col col-sp col-no-padding small-12 large-12">
+            <div class="col-inner">
+                <div class="container section-title-container" style="margin-bottom:5px;">
+                    <h2 class="section-title section-title-normal">
+                        <b></b>
+                        <span class="section-title-main" style="font-size:90%;">hộp đựng giấy cuộn lớn</span>
+                        <b></b>
+                        <a href="/danh-muc/hop-dung-giay-cuon-lon/" target="">Xem thêm<i class="icon-angle-right"></i></a>
+                    </h2>
+                </div>
+                <div class="row equalize-box large-columns-4 medium-columns-3 small-columns-2 row-small has-shadow row-box-shadow-1">
+                    @foreach (var item in Model.PaperContainers)
+                    {
+                        <div class="col">
+                            <div class="col-inner">
+                                <div class="badge-container absolute left top z-1"></div>
+                                <div class="product-small box has-hover box-normal box-text-bottom">
+                                    <div class="box-image">
+                                        <div class="image-cover" style="padding-top:100%;">
+                                            <a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" aria-label="@item.Name">
+                                                <img loading="lazy" decoding="async" width="394" height="313" src="@item.ImagePath" srcset="@item.ImagePathLarge, @item.ImagePathMedium, @item.ImagePathSmall" class="attachment-original size-original" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="image-tools top right show-on-hover"></div>
+                                        <div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover"></div>
+                                    </div>
+                                    <div class="box-text text-center">
+                                        <div class="title-wrapper">
+                                            <p class="name product-title woocommerce-loop-product__title">
+                                                <a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">Hộp Đựng Giấy Lau Tay Nhựa</a>
+                                            </p>
+                                        </div>
+                                        <div class="price-wrapper">
+                                            <span class="price">
+                                                <span class="gia-lien-he">Giá: @item.Price</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <style>
+                    #col-1857065369 > .col-inner {
+                        border-radius: 5px;
+                    }
+                </style>
+            </div>
+        </div>
+	</div>
+        <style>
+            #row-639466548 > .col > .col-inner {
+                padding: 15px 15px 10px 15px;
+                background-color: rgb(255, 255, 255);
+            }
+        </style>
+    </div>
+
+    <style>
+        #section_1047489483 {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    </style>
+</section>
+
+<div class="row" id="row-639466549" style="padding-top: 15px;">
+  <div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
+    <div class="sidebar-menu no-scrollbar">
+      <ul class="nav nav-sidebar nav-vertical nav-uppercase" data-tab="1">
+
+       <!-- Search Form -->
+		<li class="search-form has-icon">
+		  <form asp-controller="Product" asp-action="Search" method="get">
+		    <div class="flex-row">
+		      <div class="flex-col flex-grow">
+		        <label class="screen-reader-text" for="search-field">Tìm kiếm:</label>
+		        <input type="search" id="search-field" name="s" class="search-field" placeholder="Nhập từ khóa cần tìm..." />
+		      </div>
+		      <div class="flex-col">
+		        <button type="submit" class="submit-button button icon" aria-label="Tìm kiếm">
+		          <i class="icon-search"></i>
+		        </button>
+		      </div>
+		    </div>
+		  </form>
+		</li>
+
+        <!-- Menu Items -->
+        <li class="menu-item current"><a href="https://xuonggiayvesinh.net/">Trang chủ</a></li>
+        <li class="menu-item"><a href="https://xuonggiayvesinh.net/gioi-thieu/">Giới thiệu</a></li>
+        <li class="menu-item"><a href="https://xuonggiayvesinh.net/danh-muc/giay-ve-sinh-cuon-lon/">Giấy Vệ Sinh Cuộn Lớn</a></li>
+        <li class="menu-item"><a href="https://xuonggiayvesinh.net/danh-muc/giay-ve-sinh-cuon-nho/">Giấy Vệ Sinh Cuộn Nhỏ</a></li>
+        <li class="menu-item"><a href="https://xuonggiayvesinh.net/danh-muc/hop-dung-giay-cuon-lon/">Hộp Đựng Giấy Cuộn Lớn</a></li>
+        <li class="menu-item"><a href="https://xuonggiayvesinh.net/danh-muc/hop-dung-giay-lau-tay/">Hộp Đựng Giấy Lau Tay</a></li>
+        <li class="menu-item"><a href="https://xuonggiayvesinh.net/danh-muc/may-say-tay/">Máy Sấy Tay</a></li>
+        <li class="menu-item"><a href="https://xuonggiayvesinh.net/danh-muc/giay-an/">Giấy Ăn</a></li>
+        <li class="menu-item"><a href="https://xuonggiayvesinh.net/danh-muc/giay-lau-tay/">Giấy Lau Tay</a></li>
+        <li class="menu-item"><a href="https://xuonggiayvesinh.net/danh-muc/tui-dung-rac/">Túi Đựng Rác</a></li>
+        <li class="menu-item"><a href="https://xuonggiayvesinh.net/category/khuyen-mai/">Khuyến mãi</a></li>
+        <li class="menu-item"><a href="https://xuonggiayvesinh.net/tin-tuc/">Tin tức</a></li>
+        <li class="menu-item"><a href="https://xuonggiayvesinh.net/lien-he/">Liên hệ</a></li>
+
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,821 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Hazelnut.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Hazelnut.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\css\\aio-tools-public.css",
+      "PackagePath": "staticwebassets\\css\\aio-tools-public.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\css\\aio_ct_button.css",
+      "PackagePath": "staticwebassets\\css\\aio_ct_button.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\css\\all.css",
+      "PackagePath": "staticwebassets\\css\\all.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\css\\all.min.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\css\\all_1.css",
+      "PackagePath": "staticwebassets\\css\\all_1.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\css\\flatsome-shop.css",
+      "PackagePath": "staticwebassets\\css\\flatsome-shop.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\css\\flatsome.css",
+      "PackagePath": "staticwebassets\\css\\flatsome.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\css\\srpw-frontend.css",
+      "PackagePath": "staticwebassets\\css\\srpw-frontend.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\css\\v4-shims.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\css\\v4-shims_1.css",
+      "PackagePath": "staticwebassets\\css\\v4-shims_1.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-brands-400_1.eot",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400_1.eot"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-brands-400_1.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400_1.ttf"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-brands-400_1.woff",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400_1.woff"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-brands-400_1.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400_1.woff2"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-brands-400_2.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400_2.ttf"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-brands-400_2.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400_2.woff2"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-regular-400_1.eot",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400_1.eot"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-regular-400_1.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400_1.ttf"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-regular-400_1.woff",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400_1.woff"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-regular-400_1.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400_1.woff2"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-regular-400_2.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400_2.ttf"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-regular-400_2.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400_2.woff2"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-solid-900_1.eot",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900_1.eot"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-solid-900_1.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900_1.ttf"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-solid-900_1.woff",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900_1.woff"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-solid-900_1.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900_1.woff2"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-solid-900_2.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900_2.ttf"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-solid-900_2.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900_2.woff2"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fl-icons.eot",
+      "PackagePath": "staticwebassets\\fonts\\fl-icons.eot"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fl-icons.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fl-icons.ttf"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fl-icons.woff",
+      "PackagePath": "staticwebassets\\fonts\\fl-icons.woff"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fl-icons.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fl-icons.woff2"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\fonts\\fl-icons_1.eot",
+      "PackagePath": "staticwebassets\\fonts\\fl-icons_1.eot"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\1-1536x874.jpg",
+      "PackagePath": "staticwebassets\\images\\1-1536x874.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\1-600x341.jpg",
+      "PackagePath": "staticwebassets\\images\\1-600x341.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\1-768x437.jpg",
+      "PackagePath": "staticwebassets\\images\\1-768x437.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\1.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\2-600x403.jpg",
+      "PackagePath": "staticwebassets\\images\\2-600x403.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\2-768x515.jpg",
+      "PackagePath": "staticwebassets\\images\\2-768x515.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\2.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\3.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\4.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\5.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\BANNER-GIAY-VS-01-1536x640.jpg",
+      "PackagePath": "staticwebassets\\images\\BANNER-GIAY-VS-01-1536x640.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\BANNER-GIAY-VS-01-600x250.jpg",
+      "PackagePath": "staticwebassets\\images\\BANNER-GIAY-VS-01-600x250.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\BANNER-GIAY-VS-01-768x320.jpg",
+      "PackagePath": "staticwebassets\\images\\BANNER-GIAY-VS-01-768x320.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\BANNER-GIAY-VS-01.jpg",
+      "PackagePath": "staticwebassets\\images\\BANNER-GIAY-VS-01.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\BANNER-GIAY-VS-02-1536x640.jpg",
+      "PackagePath": "staticwebassets\\images\\BANNER-GIAY-VS-02-1536x640.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\BANNER-GIAY-VS-02-600x250.jpg",
+      "PackagePath": "staticwebassets\\images\\BANNER-GIAY-VS-02-600x250.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\BANNER-GIAY-VS-02-768x320.jpg",
+      "PackagePath": "staticwebassets\\images\\BANNER-GIAY-VS-02-768x320.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\BANNER-GIAY-VS-02.jpg",
+      "PackagePath": "staticwebassets\\images\\BANNER-GIAY-VS-02.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\ChatGPT Image 14_12_56 12 thg 5, 2025.png",
+      "PackagePath": "staticwebassets\\images\\ChatGPT Image 14_12_56 12 thg 5, 2025.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\HazelnutLogo-nobackground.png",
+      "PackagePath": "staticwebassets\\images\\HazelnutLogo-nobackground.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\HazelnutLogo.png",
+      "PackagePath": "staticwebassets\\images\\HazelnutLogo.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Logo-Giayvesinh.png",
+      "PackagePath": "staticwebassets\\images\\Logo-Giayvesinh.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture1.png",
+      "PackagePath": "staticwebassets\\images\\Picture1.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture10.png",
+      "PackagePath": "staticwebassets\\images\\Picture10.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture11.png",
+      "PackagePath": "staticwebassets\\images\\Picture11.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture12-100x100.png",
+      "PackagePath": "staticwebassets\\images\\Picture12-100x100.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture12-400x400.png",
+      "PackagePath": "staticwebassets\\images\\Picture12-400x400.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture12.png",
+      "PackagePath": "staticwebassets\\images\\Picture12.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture13-100x100.png",
+      "PackagePath": "staticwebassets\\images\\Picture13-100x100.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture13.png",
+      "PackagePath": "staticwebassets\\images\\Picture13.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture14.png",
+      "PackagePath": "staticwebassets\\images\\Picture14.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture15.png",
+      "PackagePath": "staticwebassets\\images\\Picture15.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture16-100x100.png",
+      "PackagePath": "staticwebassets\\images\\Picture16-100x100.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture16.png",
+      "PackagePath": "staticwebassets\\images\\Picture16.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture2.png",
+      "PackagePath": "staticwebassets\\images\\Picture2.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture3.png",
+      "PackagePath": "staticwebassets\\images\\Picture3.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture4.png",
+      "PackagePath": "staticwebassets\\images\\Picture4.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture5.png",
+      "PackagePath": "staticwebassets\\images\\Picture5.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture6.png",
+      "PackagePath": "staticwebassets\\images\\Picture6.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture7.png",
+      "PackagePath": "staticwebassets\\images\\Picture7.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture8-100x100.png",
+      "PackagePath": "staticwebassets\\images\\Picture8-100x100.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture8-400x400.png",
+      "PackagePath": "staticwebassets\\images\\Picture8-400x400.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture8.png",
+      "PackagePath": "staticwebassets\\images\\Picture8.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture9-100x100.png",
+      "PackagePath": "staticwebassets\\images\\Picture9-100x100.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture9.png",
+      "PackagePath": "staticwebassets\\images\\Picture9.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\background.png",
+      "PackagePath": "staticwebassets\\images\\background.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\cropped-Logo-Giayvesinh-180x180.png",
+      "PackagePath": "staticwebassets\\images\\cropped-Logo-Giayvesinh-180x180.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\cropped-Logo-Giayvesinh-192x192.png",
+      "PackagePath": "staticwebassets\\images\\cropped-Logo-Giayvesinh-192x192.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\cropped-Logo-Giayvesinh-32x32.png",
+      "PackagePath": "staticwebassets\\images\\cropped-Logo-Giayvesinh-32x32.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\images\\fa-brands-400.svg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\fa-brands-400_1.svg",
+      "PackagePath": "staticwebassets\\images\\fa-brands-400_1.svg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\images\\fa-regular-400.svg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\fa-regular-400_1.svg",
+      "PackagePath": "staticwebassets\\images\\fa-regular-400_1.svg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\images\\fa-solid-900.svg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\fa-solid-900_1.svg",
+      "PackagePath": "staticwebassets\\images\\fa-solid-900_1.svg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\fl-icons.svg",
+      "PackagePath": "staticwebassets\\images\\fl-icons.svg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\icon-zalo.png",
+      "PackagePath": "staticwebassets\\images\\icon-zalo.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\line.png",
+      "PackagePath": "staticwebassets\\images\\line.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\messenger.png",
+      "PackagePath": "staticwebassets\\images\\messenger.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\phone.png",
+      "PackagePath": "staticwebassets\\images\\phone.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\shadow@2x.png",
+      "PackagePath": "staticwebassets\\images\\shadow@2x.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\underline.png",
+      "PackagePath": "staticwebassets\\images\\underline.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\z5179926814644_b066cc8303f541051bac93c80e822913-100x100.jpg",
+      "PackagePath": "staticwebassets\\images\\z5179926814644_b066cc8303f541051bac93c80e822913-100x100.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\z5179926814644_b066cc8303f541051bac93c80e822913-400x400.jpg",
+      "PackagePath": "staticwebassets\\images\\z5179926814644_b066cc8303f541051bac93c80e822913-400x400.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\z5179926814644_b066cc8303f541051bac93c80e822913-600x600.jpg",
+      "PackagePath": "staticwebassets\\images\\z5179926814644_b066cc8303f541051bac93c80e822913-600x600.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\z5179926814644_b066cc8303f541051bac93c80e822913.jpg",
+      "PackagePath": "staticwebassets\\images\\z5179926814644_b066cc8303f541051bac93c80e822913.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\z5255358988534_98b367936326f5a09e07f0a4dc40dcc9.jpg",
+      "PackagePath": "staticwebassets\\images\\z5255358988534_98b367936326f5a09e07f0a4dc40dcc9.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\z5255371706902_f30db0cd5c7b7752529b437b38b1194f-600x338.jpg",
+      "PackagePath": "staticwebassets\\images\\z5255371706902_f30db0cd5c7b7752529b437b38b1194f-600x338.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\z5255371706902_f30db0cd5c7b7752529b437b38b1194f.jpg",
+      "PackagePath": "staticwebassets\\images\\z5255371706902_f30db0cd5c7b7752529b437b38b1194f.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\z5255387897448_58d446087449c96b41a44c4db8516e17-100x100.jpg",
+      "PackagePath": "staticwebassets\\images\\z5255387897448_58d446087449c96b41a44c4db8516e17-100x100.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\z5255387897448_58d446087449c96b41a44c4db8516e17-400x400.jpg",
+      "PackagePath": "staticwebassets\\images\\z5255387897448_58d446087449c96b41a44c4db8516e17-400x400.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\z5255387897448_58d446087449c96b41a44c4db8516e17.jpg",
+      "PackagePath": "staticwebassets\\images\\z5255387897448_58d446087449c96b41a44c4db8516e17.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\z5270723986943_6e8a877ec9d8f31c134b0c0d28e49651.jpg",
+      "PackagePath": "staticwebassets\\images\\z5270723986943_6e8a877ec9d8f31c134b0c0d28e49651.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\zalo.jpg",
+      "PackagePath": "staticwebassets\\images\\zalo.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\zalo.png",
+      "PackagePath": "staticwebassets\\images\\zalo.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\js\\add-to-cart.min.js",
+      "PackagePath": "staticwebassets\\js\\add-to-cart.min.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\js\\aio-tools-public.js",
+      "PackagePath": "staticwebassets\\js\\aio-tools-public.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\js\\flatsome-live-search.js",
+      "PackagePath": "staticwebassets\\js\\flatsome-live-search.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\js\\flatsome.js",
+      "PackagePath": "staticwebassets\\js\\flatsome.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\js\\gtm.js",
+      "PackagePath": "staticwebassets\\js\\gtm.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\js\\hoverIntent.min.js",
+      "PackagePath": "staticwebassets\\js\\hoverIntent.min.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\js\\index_1.js",
+      "PackagePath": "staticwebassets\\js\\index_1.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\js\\jquery-migrate.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-migrate.min.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\js\\jquery.blockUI.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.blockUI.min.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\js\\js.cookie.min.js",
+      "PackagePath": "staticwebassets\\js\\js.cookie.min.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\js\\order-attribution.min.js",
+      "PackagePath": "staticwebassets\\js\\order-attribution.min.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\js\\sdk.js",
+      "PackagePath": "staticwebassets\\js\\sdk.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\js\\sourcebuster.min.js",
+      "PackagePath": "staticwebassets\\js\\sourcebuster.min.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\js\\woocommerce.js",
+      "PackagePath": "staticwebassets\\js\\woocommerce.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\js\\woocommerce.min.js",
+      "PackagePath": "staticwebassets\\js\\woocommerce.min.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\js\\wp-emoji-release.min.js",
+      "PackagePath": "staticwebassets\\js\\wp-emoji-release.min.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Hazelnut.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Hazelnut.props",
+      "PackagePath": "build\\Hazelnut.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Hazelnut.props",
+      "PackagePath": "buildMultiTargeting\\Hazelnut.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Hazelnut.props",
+      "PackagePath": "buildTransitive\\Hazelnut.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
