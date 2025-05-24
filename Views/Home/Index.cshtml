@@ -3,6 +3,39 @@
 	Layout = "_Layout";
 }
 @model Hazelnut.Models.ViewModels.IndexViewModel
+<body class="home page-template page-template-page-blank page-template-page-blank-php page page-id-20 theme-flatsome woocommerce-js header-shadow lightbox nav-dropdown-has-arrow nav-dropdown-has-shadow nav-dropdown-has-border catalog-mode">
+    <div id="wrapper">
+        <main id="main" class="">
+            <div id="content" role="main" class="content-area">
+
+                @* <div class="slider-wrapper relative" id="slider-414672678">
+                    <div class="slider slider-nav-circle slider-nav-large slider-nav-light slider-style-normal" data-flickity-options="{
+                        " cellalign": "center" , "imagesloaded" : true, "lazyload" : 1, "freescroll" : false, "wraparound" : true, "autoplay" : 6000, "pauseautoplayonhover" : true, "prevnextbuttons" : "contain" , "adaptiveheight" : true, "dragthreshold" : 10, "percentposition" : true, "pagedots" : true, "righttoleft" : false, "draggable" : true, "selectedattraction" : 0.1, "parallax" : 0, "friction" : 0.6 }">
+
+                        <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_342813815">
+                            <div class="img-inner dark">
+                                <img fetchpriority="high" decoding="async" width="1920" height="800" src="images/BANNER-GIAY-VS-01.jpg" class="attachment-original size-original" alt="" srcset="images/BANNER-GIAY-VS-01.jpg 1920w, images/BANNER-GIAY-VS-01-768x320.jpg 768w, images/BANNER-GIAY-VS-01-1536x640.jpg 1536w, images/BANNER-GIAY-VS-01-600x250.jpg 600w" sizes="(max-width: 1920px) 100vw, 1920px">
+                            </div>
+                            <style>
+                                #image_342813815 {
+                                    width: 100%;
+                                }
+                            </style>
+                        </div>
+
+                        <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1283585699">
+                            <div class="img-inner dark">
+                                <img decoding="async" width="1920" height="800" src="images/BANNER-GIAY-VS-02.jpg" class="attachment-original size-original" alt="" srcset="images/BANNER-GIAY-VS-02.jpg 1920w, images/BANNER-GIAY-VS-02-768x320.jpg 768w, images/BANNER-GIAY-VS-02-1536x640.jpg 1536w, images/BANNER-GIAY-VS-02-600x250.jpg 600w" sizes="(max-width: 1920px) 100vw, 1920px">
+                            </div>
+                            <style>
+                                #image_1283585699 {
+                                    width: 100%;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                    <div class="loading-spin dark large centered"></div>
+                </div> *@
 
 <h1 style="display:none;">Trang chủ</h1>
 
@@ -33,7 +66,7 @@
 								<div class="product-small box has-hover box-normal box-text-bottom">
 									<div class="box-image">
 										<div class="image-cover" style="padding-top:100%;">
-											<a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" aria-label="@item.Name">
+											<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = item.ProductType })" aria-label="@item.Name">
 												<img loading="lazy" decoding="async" width="500" height="500" src="@item.ImagePath" class="attachment-original size-original" alt="" srcset="@item.ImagePathLarge, @item.ImagePathMedium, @item.ImagePathSmall" sizes="(max-width: 500px) 100vw, 500px">
 											</a>
 										</div>
@@ -46,7 +79,7 @@
 									<div class="box-text text-center">
 										<div class="title-wrapper">
 											<p class="name product-title woocommerce-loop-product__title">
-												<a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
+												<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = item.ProductType })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
 											</p>
 										</div>
 										<div class="price-wrapper">
@@ -107,7 +140,7 @@
 								<div class="product-small box has-hover box-normal box-text-bottom">
 									<div class="box-image">
 										<div class="image-cover" style="padding-top:100%;">
-											<a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" aria-label="@item.Name">
+											<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = item.ProductType })" aria-label="@item.Name">
 												<img loading="lazy" decoding="async" width="666" height="375" src="@item.ImagePath" class="attachment-original size-original" alt="" srcset="@item.ImagePathLarge, @item.ImagePathMedium, @item.ImagePathSmall" sizes="(max-width: 666px) 100vw, 666px">
 											</a>
 										</div>
@@ -117,7 +150,7 @@
 									<div class="box-text text-center">
 										<div class="title-wrapper">
 											<p class="name product-title woocommerce-loop-product__title">
-												<a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
+												<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = item.ProductType })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
 											</p>
 										</div>
 										<div class="price-wrapper">
@@ -180,7 +213,7 @@
                                     <div class="product-small box has-hover box-normal box-text-bottom">
                                         <div class="box-image">
                                             <div class="image-cover" style="padding-top:100%;">
-                                                <a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" aria-label="@item.Name">
+                                                <a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = item.ProductType })" aria-label="@item.Name">
                                                     <img loading="lazy" decoding="async" width="349" height="351" src="@item.ImagePath" class="attachment-original size-original" alt="" srcset="@item.ImagePathLarge, @item.ImagePathMedium, @item.ImagePathSmall" sizes="(max-width: 349px) 100vw, 349px">
                                                 </a>
                                             </div>
@@ -190,7 +223,7 @@
                                         <div class="box-text text-center">
                                             <div class="title-wrapper">
                                                 <p class="name product-title woocommerce-loop-product__title">
-                                                    <a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
+                                                    <a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = item.ProductType })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
                                                 </p>
                                             </div>
                                             <div class="price-wrapper">
@@ -232,7 +265,7 @@
 					                <div class="product-small box has-hover box-normal box-text-bottom">
 					                    <div class="box-image">
 					                        <div class="image-cover" style="padding-top:100%;">
-					                            <a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" aria-label="@item.Name">
+					                            <a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = item.ProductType })" aria-label="@item.Name">
 					                                    <img loading="lazy" decoding="async" width="479" height="359" src="@item.ImagePath" srcset="@item.ImagePathLarge, @item.ImagePathMedium, @item.ImagePathSmall" class="attachment-original size-original" alt="">
 					                                </a>
 					                            </div>
@@ -242,7 +275,7 @@
 					                        <div class="box-text text-center">
 					                            <div class="title-wrapper">
 					                                <p class="name product-title woocommerce-loop-product__title">
-					                                    <a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
+					                                    <a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = item.ProductType })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
 					                                </p>
 					                            </div>
 					                            <div class="price-wrapper">
@@ -286,7 +319,7 @@
                                 <div class="product-small box has-hover box-normal box-text-bottom">
                                     <div class="box-image">
                                         <div class="image-cover" style="padding-top:100%;">
-                                            <a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" aria-label="@item.Name">
+                                            <a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = item.ProductType })" aria-label="@item.Name">
                                                 <img loading="lazy" decoding="async" width="394" height="313" src="@item.ImagePath" srcset="@item.ImagePathLarge, @item.ImagePathMedium, @item.ImagePathSmall" class="attachment-original size-original" alt="">
                                             </a>
                                         </div>
@@ -296,7 +329,7 @@
                                     <div class="box-text text-center">
                                         <div class="title-wrapper">
                                             <p class="name product-title woocommerce-loop-product__title">
-                                                <a href="@Url.Action("Index", "ProductController", new { productId = item.ProductId, productType = item.ProductType })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">Hộp Đựng Giấy Lau Tay Nhựa</a>
+                                                <a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = item.ProductType })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">Hộp Đựng Giấy Lau Tay Nhựa</a>
                                             </p>
                                         </div>
                                         <div class="price-wrapper">
@@ -375,3 +408,67 @@
     </div>
   </div>
 </div>
+</div>
+</main>
+</div>
+</body>
+    <footer id="footer" class="footer-wrapper">
+
+        <section class="section footer-section dark" id="section_169160229">
+            <div class="bg section-bg fill bg-fill  bg-loaded"></div>
+                <div class="section-content relative">
+                    <div class="row row-small" id="row-2006218840">
+                    <div id="col-851270230" class="col cot1 medium-6 small-12 large-3">
+                        <div class="col-inner">
+                            <h3><span style="font-size: 100%;">THÔNG TIN LIÊN HỆ</span></h3>
+                            <h4>Công Ty cung cấp giấy số một Gò Vấp</h4>
+                            <ul>
+                                <li><strong>Địa chỉ:Số 1142 Đường Nguyễn Khoái - Thanh Trì -Hà Nội</strong></li>
+                                <li><strong>Điện thoại / Zalo:</strong> 0329 042 522</li>
+                                <li><strong>Website:</strong> <a href="https://xuonggiayvesinh.net/">https://xuonggiayvesinh.net</a></li>
+                                <li><strong>Email:</strong> lavanvinh2000@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="col-62320599" class="col cot3 medium-6 small-12 large-3">
+                        <div class="col-inner">
+                            <h3><span style="font-size: 100%;">CAM KẾT CỦA CHÚNG TÔI</span></h3>
+                            <p>Với chữ Tín đặt lên hàng đầu cùng với phong cách tư vấn phục vụ tận tình với khách hàng thì Công Ty TNHH Thế Giới Giấy tin rằng sẽ đem đến sự tin tưởng và nhận được sự hài lòng nhất của khách hàng dành cho công ty.</p>
+
+                        </div>
+                    </div>
+
+                    <div id="col-315899189" class="col cot2 medium-6 small-12 large-3">
+                        <div class="col-inner">
+                            <h3><span style="font-size: 100%;">HỖ TRỢ KHÁCH HÀNG</span></h3>
+                            <ul>
+                                <li><span style="font-size: 95%;"><a href="http://inan5.maugiaodien.com/quy-trinh-lam-viec">Quy trình làm việc</a></span></li>
+                                <li><span style="font-size: 95%;"><a href="http://inan5.maugiaodien.com/chinh-sach-bao-hanh-doi-tra">Bảo hành - đổi trả</a></span></li>
+                                <li><span style="font-size: 95%;"><a href="http://inan5.maugiaodien.com/hinh-thuc-thanh-toan">Hình thức thanh toán</a></span></li>
+                                <li><span style="font-size: 95%;"><a href="http://inan5.maugiaodien.com/chinh-sach-van-chuyen-giao-nhan">Vận chuyển - giao nhận</a></span></li>
+                                <li><span style="font-size: 95%;"><a href="http://inan5.maugiaodien.com/chinh-sach-bao-mat">Chính sách bảo mật</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="col-512366795" class="col cot4 medium-6 small-12 large-3">
+                        <div class="col-inner">
+                            <h3><span style="font-size: 100%;">FANPAGE FACEBOOK</span></h3>
+                            <p>
+                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgiayvesinhto&tabs=timeline&width=300&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1242551153353364" width="300" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <style>
+                #section_169160229 {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    background-color: #6ac358;
+                }
+            </style>
+        </section>
+    </footer>

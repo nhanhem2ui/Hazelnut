@@ -25,12 +25,20 @@
       "PackagePath": "staticwebassets\\css\\all_1.css"
     },
     {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\css\\default-skin.min.css",
+      "PackagePath": "staticwebassets\\css\\default-skin.min.css"
+    },
+    {
       "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\css\\flatsome-shop.css",
       "PackagePath": "staticwebassets\\css\\flatsome-shop.css"
     },
     {
       "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\css\\flatsome.css",
       "PackagePath": "staticwebassets\\css\\flatsome.css"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\css\\photoswipe.min.css",
+      "PackagePath": "staticwebassets\\css\\photoswipe.min.css"
     },
     {
       "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\css\\srpw-frontend.css",
@@ -289,6 +297,10 @@
       "PackagePath": "staticwebassets\\images\\Logo-Giayvesinh.png"
     },
     {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture1-400x334.png",
+      "PackagePath": "staticwebassets\\images\\Picture1-400x334.png"
+    },
+    {
       "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture1.png",
       "PackagePath": "staticwebassets\\images\\Picture1.png"
     },
@@ -345,6 +357,14 @@
       "PackagePath": "staticwebassets\\images\\Picture3.png"
     },
     {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture4-100x100.png",
+      "PackagePath": "staticwebassets\\images\\Picture4-100x100.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture4-316x400.png",
+      "PackagePath": "staticwebassets\\images\\Picture4-316x400.png"
+    },
+    {
       "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture4.png",
       "PackagePath": "staticwebassets\\images\\Picture4.png"
     },
@@ -397,6 +417,22 @@
       "PackagePath": "staticwebassets\\images\\cropped-Logo-Giayvesinh-32x32.png"
     },
     {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\default-skin.png",
+      "PackagePath": "staticwebassets\\images\\default-skin.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\default-skin.svg",
+      "PackagePath": "staticwebassets\\images\\default-skin.svg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\doi-tra-hang-hoa-100x100.jpg",
+      "PackagePath": "staticwebassets\\images\\doi-tra-hang-hoa-100x100.jpg"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\doi-tra-hang-hoa.jpg",
+      "PackagePath": "staticwebassets\\images\\doi-tra-hang-hoa.jpg"
+    },
+    {
       "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\fa-brands-400.svg",
       "PackagePath": "staticwebassets\\images\\fa-brands-400.svg"
     },
@@ -441,8 +477,16 @@
       "PackagePath": "staticwebassets\\images\\phone.png"
     },
     {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\preloader.gif",
+      "PackagePath": "staticwebassets\\images\\preloader.gif"
+    },
+    {
       "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\shadow@2x.png",
       "PackagePath": "staticwebassets\\images\\shadow@2x.png"
+    },
+    {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\thiet-ke-mien-phi.jpg",
+      "PackagePath": "staticwebassets\\images\\thiet-ke-mien-phi.jpg"
     },
     {
       "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\underline.png",

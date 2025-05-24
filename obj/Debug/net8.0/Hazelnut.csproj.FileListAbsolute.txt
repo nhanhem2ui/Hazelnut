@@ -157,3 +157,4 @@ E:\Dotnet\Hazelnut\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
 E:\Dotnet\Hazelnut\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 E:\Dotnet\Hazelnut\obj\Debug\net8.0\Hazelnut.csproj.Up2Date
 E:\Dotnet\Hazelnut\bin\Debug\net8.0\app.db
+E:\Dotnet\Hazelnut\obj\Debug\net8.0\Hazelnut.sourcelink.json
