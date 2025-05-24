@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hazelnut")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b4bfcfae324073a69fa0d0da6b67fb686894dda")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+513dac7b64ce12ad42d487952161bac1d2a1722a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hazelnut")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hazelnut")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

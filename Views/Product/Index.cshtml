@@ -2,845 +2,320 @@
 	ViewData["Title"] = "ProductIndex";
 	Layout = "_Layout";
 }
-@model Hazelnut.Models.ProductBase
+@model Hazelnut.Models.ViewModels.ProductDetailsViewModel
 <body class="product-template-default single single-product postid-1065 theme-flatsome woocommerce woocommerce-page woocommerce-js header-shadow lightbox nav-dropdown-has-arrow nav-dropdown-has-shadow nav-dropdown-has-border catalog-mode">
-
-<div id="wrapper">
-
-	<header id="header" class="header has-sticky sticky-jump">
-		<div class="header-wrapper">
-			<div id="masthead" class="header-main ">
-      <div class="header-inner flex-row container logo-left medium-logo-center" role="navigation">
-
-          <!-- Logo -->
-          <div id="logo" class="flex-col logo">
-            
-<!-- Header logo -->
-<a href="https://xuonggiayvesinh.net/" title="Công Ty TNHH Thế Giới Giấy" rel="home">
-		<img width="1920" height="442" src="images/Logo-Giayvesinh.png" class="header_logo header-logo" alt="Công Ty TNHH Thế Giới Giấy"><img width="1920" height="442" src="images/Logo-Giayvesinh.png" class="header-logo-dark" alt="Công Ty TNHH Thế Giới Giấy"></a>
-          </div>
-
-          <!-- Mobile Left Elements -->
-          <div class="flex-col show-for-medium flex-left">
-            <ul class="mobile-nav nav nav-left ">
-              <li class="nav-icon has-icon">
-  <div class="header-button">		<a href="#" data-open="#main-menu" data-pos="left" data-bg="main-menu-overlay" data-color="" class="icon primary button circle is-small" aria-label="Menu" aria-controls="main-menu" aria-expanded="false">
-
-		  <i class="icon-menu"></i>
-		  		</a>
-	 </div> </li>
-            </ul>
-          </div>
-
-          <!-- Left Elements -->
-          <div class="flex-col hide-for-medium flex-left
-            flex-grow">
-            <ul class="header-nav header-nav-main nav nav-left  nav-uppercase">
-              <li class="header-search-form search-form html relative has-icon">
-	<div class="header-search-form-wrapper">
-		<div class="searchform-wrapper ux-search-box relative is-normal"><form role="search" method="get" class="searchform" action="https://xuonggiayvesinh.net/">
-	<div class="flex-row relative">
-						<div class="flex-col flex-grow">
-			<label class="screen-reader-text" for="woocommerce-product-search-field-0">Tìm kiếm:</label>
-			<input type="search" id="woocommerce-product-search-field-0" class="search-field mb-0" placeholder="Nhập từ khóa cần tìm..." value="" name="s">
-			<input type="hidden" name="post_type" value="product">
-					</div>
-		<div class="flex-col">
-			<button type="submit" value="Tìm kiếm" class="ux-search-submit submit-button secondary button  icon mb-0" aria-label="Submit">
-				<i class="icon-search"></i>			</button>
-		</div>
-	</div>
-	<div class="live-search-results text-left z-top"></div>
-</form>
-</div>	</div>
-</li>
-            </ul>
-          </div>
-
-          <!-- Right Elements -->
-          <div class="flex-col hide-for-medium flex-right">
-            <ul class="header-nav header-nav-main nav nav-right  nav-uppercase">
-              <li class="html header-button-1">
-	<div class="header-button">
-		<a href="tel:0329042522" class="button primary is-shade is-medium" style="border-radius:5px;">
-    <span>Hotline: 0329 042 522</span>
-  </a>
-	</div>
-</li>
-<li class="html header-button-2">
-	<div class="header-button">
-		<a href="/khuyen-mai" class="button success is-bevel is-small" style="border-radius:99px;">
-    <span>Khuyến mãi</span>
-  </a>
-	</div>
-</li>
-<li class="header-divider"></li><li class="html header-social-icons ml-0">
-	<div class="social-icons follow-icons"><a href="https://www.facebook.com/giayvesinhto?mibextid=LQQJ4d" target="_blank" data-label="Facebook" class="icon primary button circle facebook tooltip" title="Follow on Facebook" aria-label="Follow on Facebook" rel="noopener nofollow"><i class="icon-facebook"></i></a><a href="#" target="_blank" data-label="TikTok" class="icon primary button circle tiktok tooltip" title="Follow on TikTok" aria-label="Follow on TikTok" rel="noopener nofollow"><i class="icon-tiktok"></i></a><a href="#" data-label="YouTube" target="_blank" class="icon primary button circle youtube tooltip" title="Follow on YouTube" aria-label="Follow on YouTube" rel="noopener nofollow"><i class="icon-youtube"></i></a></div></li>
-            </ul>
-          </div>
-
-          <!-- Mobile Right Elements -->
-          <div class="flex-col show-for-medium flex-right">
-            <ul class="mobile-nav nav nav-right ">
-              <li class="header-search header-search-lightbox has-icon">
-	<div class="header-button">		<a href="#search-lightbox" aria-label="Tìm kiếm" data-open="#search-lightbox" data-focus="input.search-field" class="icon primary button circle is-small">
-		<i class="icon-search" style="font-size:16px;"></i></a>
-		</div>
-	
-	<div id="search-lightbox" class="mfp-hide dark text-center">
-		<div class="searchform-wrapper ux-search-box relative is-large"><form role="search" method="get" class="searchform" action="https://xuonggiayvesinh.net/">
-	<div class="flex-row relative">
-						<div class="flex-col flex-grow">
-			<label class="screen-reader-text" for="woocommerce-product-search-field-1">Tìm kiếm:</label>
-			<input type="search" id="woocommerce-product-search-field-1" class="search-field mb-0" placeholder="Nhập từ khóa cần tìm..." value="" name="s">
-			<input type="hidden" name="post_type" value="product">
-					</div>
-		<div class="flex-col">
-			<button type="submit" value="Tìm kiếm" class="ux-search-submit submit-button secondary button  icon mb-0" aria-label="Submit">
-				<i class="icon-search"></i>			</button>
-		</div>
-	</div>
-	<div class="live-search-results text-left z-top"></div>
-</form>
-</div>	</div>
-</li>
-            </ul>
-          </div>
-
-      </div>
-
-      </div>
-<div id="wide-nav" class="header-bottom wide-nav nav-dark hide-for-medium">
-    <div class="flex-row container">
-
-                        <div class="flex-col hide-for-medium flex-left">
-                <ul class="nav header-nav header-bottom-nav nav-left  nav-box nav-size-medium nav-uppercase">
-                    <li id="menu-item-557" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-557 menu-item-design-default"><a href="https://xuonggiayvesinh.net/" class="nav-top-link"><i class="fa fa-home"></i></a></li>
-<li id="menu-item-565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-565 menu-item-design-default"><a href="https://xuonggiayvesinh.net/gioi-thieu/" class="nav-top-link">Giới thiệu</a></li>
-<li id="menu-item-541" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-product-ancestor current-menu-parent current-product-parent menu-item-541 active menu-item-design-default"><a href="https://xuonggiayvesinh.net/danh-muc/giay-ve-sinh-cuon-lon/" class="nav-top-link">Giấy Vệ Sinh Cuộn Lớn</a></li>
-<li id="menu-item-1038" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1038 menu-item-design-default"><a href="https://xuonggiayvesinh.net/danh-muc/giay-an/" class="nav-top-link">Giấy Ăn</a></li>
-<li id="menu-item-1039" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1039 menu-item-design-default"><a href="https://xuonggiayvesinh.net/danh-muc/giay-lau-tay/" class="nav-top-link">Giấy Lau Tay</a></li>
-<li id="menu-item-1040" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1040 menu-item-design-default"><a href="https://xuonggiayvesinh.net/danh-muc/giay-ve-sinh-cuon-nho/" class="nav-top-link">Giấy Vệ Sinh Cuộn Nhỏ</a></li>
-<li id="menu-item-1041" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1041 menu-item-design-default"><a href="https://xuonggiayvesinh.net/danh-muc/hop-dung-giay-cuon-lon/" class="nav-top-link">Hộp Đựng Giấy Cuộn Lớn</a></li>
-                </ul>
-            </div>
-            
-            
-                        <div class="flex-col hide-for-medium flex-right flex-grow">
-              <ul class="nav header-nav header-bottom-nav nav-right  nav-box nav-size-medium nav-uppercase">
-                                 </ul>
-            </div>
-            
-            
-    </div>
-</div>
-
-<div class="header-bg-container fill"><div class="header-bg-image fill"></div><div class="header-bg-color fill"></div></div>		</div>
-	</header>
-
-	
-	<main id="main" class="">
-
-	<div class="shop-container">
-
-		
-			<div class="container">
-	<div class="woocommerce-notices-wrapper"></div></div>
-<div id="product-1065" class="product type-product post-1065 status-publish first instock product_cat-giay-ve-sinh-cuon-lon has-post-thumbnail shipping-taxable product-type-simple">
-
-	<div class="custom-product-page ux-layout-737 ux-layout-scope-global">
-
-		<div class="row row-small" id="row-1351797598">
-
-
-	<div id="col-8640515" class="col medium-9 small-12 large-9">
-				<div class="col-inner" style="background-color:rgb(255,255,255);">
-			
-			
-
-<div class="row" id="row-538377058">
-
-
-	<div id="col-1697764374" class="col medium-6 small-12 large-6">
-				<div class="col-inner">
-			
-			
-
-
-<div class="product-images relative mb-half has-hover woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4">
-
-  <div class="badge-container is-larger absolute left top z-1">
-
-</div>
-
-  <div class="image-tools absolute top show-on-hover right z-3">
-      </div>
-
-  <div class="woocommerce-product-gallery__wrapper product-gallery-slider slider slider-nav-small mb-half" data-flickity-options="{
-                " cellalign":="" "center",="" "wraparound":="" true,="" "autoplay":="" false,="" "prevnextbuttons":true,="" "adaptiveheight":="" "imagesloaded":="" "lazyload":="" 1,="" "dragthreshold"="" :="" 15,="" "pagedots":="" "righttoleft":="" false="" }"="">
-    <div data-thumb="https://xuonggiayvesinh.net/wp-content/uploads/2024/03/Picture5-100x100.png" data-thumb-alt="" class="woocommerce-product-gallery__image slide first"><a href="https://xuonggiayvesinh.net/wp-content/uploads/2024/03/Picture5.png"><img width="347" height="463" src="images/Picture5.png" class="wp-post-image skip-lazy" alt="" data-caption="" data-src="https://xuonggiayvesinh.net/wp-content/uploads/2024/03/Picture5.png" data-large_image="https://xuonggiayvesinh.net/wp-content/uploads/2024/03/Picture5.png" data-large_image_width="347" data-large_image_height="463" decoding="async" fetchpriority="high"></a></div>  </div>
-
-  <div class="image-tools absolute bottom left z-3">
-        <a href="#product-zoom" class="zoom-button button is-outline circle icon tooltip hide-for-small" title="Zoom">
-      <i class="icon-expand"></i>    </a>
-   </div>
-</div>
-
-
-
-
-		</div>
-					</div>
-
-	
-
-	<div id="col-1384162081" class="col medium-6 small-12 large-6">
-				<div class="col-inner">
-			
-			
-
-<div class="product-breadcrumb-container is-small"><nav class="woocommerce-breadcrumb breadcrumbs uppercase"><a href="https://xuonggiayvesinh.net">Trang chủ</a> <span class="divider">/</span> <a href="https://xuonggiayvesinh.net/san-pham/">Sản phẩm</a> <span class="divider">/</span> <a href="https://xuonggiayvesinh.net/danh-muc/giay-ve-sinh-cuon-lon/">Giấy Vệ Sinh Cuộn Lớn</a></nav></div>
-
-<div class="product-title-container is-smaller is-uppercase"><h1 class="product-title product_title entry-title">
-	Giấy Vệ Sinh Cuộn Lớn Etis 700g</h1>
-
-</div>
-
-
-
-<p>
-</p><div class="box-thongso">
-	<table table-striped="">
-		<tbody>
-						<tr>	
-			    <th>Kích thước</th>
-			    <td>100% Bột giấy nguyên sinh cao cấp </td>
-			 </tr>
-						
-						<tr>	
-			    <th>Khối lượng</th>
-			    <td>700g 3 lớp</td>
-			 </tr>
-						
-						<tr>	
-			    <th>Xuất xứ</th>
-			    <td>Việt Nam</td>
-			 </tr>
-						
-						<tr>	
-			    <th>Nhà sản xuất</th>
-			    <td>Thế Giới Giấy </td>
-			 </tr>
-						
-						<tr>	
-			    <th>Vận chuyển</th>
-			    <td>Miễn Phí Vận Chuyển </td>
-			 </tr>
-			
-		</tbody>
-	</table>
-</div>
-
-<script type="text/javascript">
-    document.addEventListener( 'wpcf7submit', function( event ) {
-        jQuery('.wpcf7 .processing').removeClass('processing');
-    }, false );
-</script>
-
-    <p></p>
-<div class="row row-small align-middle" id="row-753115827">
-
-
-	<div id="col-548691289" class="col col-no-padding medium-6 small-12 large-6">
-				<div class="col-inner text-left">
-			
-			
-
-<a href="tel:0329042522" class="button primary button-support" style="border-radius:5px;">
-  <i class="icon-phone" aria-hidden="true"></i>  <span>0329 042 522</span>
-  </a>
-
-
-
-		</div>
-					</div>
-
-	
-
-	<div id="col-1389630733" class="col col-no-padding medium-6 small-12 large-6">
-				<div class="col-inner text-right">
-			
-			
-
-<a href="https://zalo.me/0329042522" target="_blank" class="button secondary is-bevel button-support" rel="noopener" style="border-radius:5px;">
-  <i class="icon-user" aria-hidden="true"></i>  <span>Chat zalo</span>
-  </a>
-
-
-
-		</div>
-					</div>
-
-	
-
-
-<style>
-#row-753115827 > .col > .col-inner {
-  padding: 0px 0px 0px 0px;
-}
-</style>
-</div>
-
-<div class="wpcf7 no-js" id="wpcf7-f22-p1065-o1" lang="vi" dir="ltr">
-<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="/san-pham/giay-ve-sinh-cuon-lon-etis-700g/#wpcf7-f22-p1065-o1" method="post" class="wpcf7-form init" aria-label="Form liên hệ" novalidate="novalidate" data-status="init">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="22">
-<input type="hidden" name="_wpcf7_version" value="5.9.3">
-<input type="hidden" name="_wpcf7_locale" value="vi">
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f22-p1065-o1">
-<input type="hidden" name="_wpcf7_container_post" value="1065">
-<input type="hidden" name="_wpcf7_posted_data_hash" value="">
-</div>
-<span class="wpcf7-form-control-wrap lay-tieu-de-sp" data-name="lay-tieu-de-sp"><input type="hidden" name="lay-tieu-de-sp" id="" class="wpcf7-form-control wpcf7-hidden wpcf7dtx wpcf7dtx-hidden" aria-invalid="false" value="Giấy Vệ Sinh Cuộn Lớn Etis 700g" list="" autocomplete="off"></span>
-<div class="form-sdt">
-	<h3 class="title-formsp">ĐẶT HÀNG NHANH
-	</h3>
-	<p><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Họ và tên..." value="" type="text" name="your-name"></span><br>
-<span class="wpcf7-form-control-wrap" data-name="so-dien-thoai"><input size="40" class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Để lại số điện thoại, chúng tôi sẽ liên hệ lại ngay..." value="" type="tel" name="so-dien-thoai"></span>
-	</p>
-	<center>
-		<p><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="GỬI NGAY">
-		</p>
-	</center>
-</div><div class="wpcf7-response-output" aria-hidden="true"></div>
-</form>
-</div>
-
-
-
-		</div>
-					</div>
-
-	
-
-</div>
-
-	<div class="woocommerce-tabs wc-tabs-wrapper container tabbed-content">
-		<ul class="tabs wc-tabs product-tabs small-nav-collapse nav nav-uppercase nav-line nav-left" role="tablist">
-							<li class="description_tab active" id="tab-title-description" role="presentation">
-					<a href="#tab-description" role="tab" aria-selected="true" aria-controls="tab-description">
-						Mô tả					</a>
-				</li>
-									</ul>
-		<div class="tab-panels">
-							<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content active" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description">
-										
-
-<p>Giấy Vệ Sinh Cuộn Lớn 700g Etis 3 lớp . Là thương hiệu được phát triển bởi công ty và nhà xưởng , Nhằm mục đích mang lại nhiều sự lựa trọn và mẫu mã để khách hàng có nhiều sự lựa chọn về các loại spham giấy bên công ty . Thành Phần và chất lượng vẫn luôn được đàm bảo và giá thành hợp lý<br>
-1 . Tên spham . Giấy Vệ Sinh Cuộn Lớn Etis 500g<br>
-2 . Thành phần chính . 100% bột giấy nguyên sinh<br>
-3 . Trọng lượng . 700g 3 lớp<br>
-4 . Định lượng . 13 ± 2g/m²<br>
-5. Số Lớp . 3 lớp<br>
-6 . Quy cách đóng gói . 10&20 cuộn/1 bịch<br>
-7. Xuất sứ . Việt Nam</p>
+	@{
+		string? size = null;
+		string? price = null;
+		string? weight = null;
+		string? origin = null;
+		string? producer = null;
+		string? description = null;
+
+		if (Model.Product is ToiletPaper tp)
+		{
+			size = tp.Size;
+			price = tp.Price;
+			weight = tp.Weight;
+			origin = tp.Origin;
+			producer = tp.Producer;
+			description = tp.Description;
+		}
+		else if (Model.Product is SmallToiletPaper stp)
+		{
+		    size = stp.Size;
+		    price = stp.Price;
+		    weight = stp.Weight;
+		    origin = stp.Origin;
+		    producer = stp.Producer;
+		    description = stp.Description;
+		}
+		else if (Model.Product is Napkin napkin)
+		{
+		    size = napkin.Size;
+		    price = napkin.Price;
+		    weight = napkin.Weight;
+		    origin = napkin.Origin;
+		    producer = napkin.Producer;
+		    description = napkin.Description;
+		}
+		else if (Model.Product is PaperHandkerchiefs hanky)
+		{
+		    size = hanky.Size;
+		    price = hanky.Price;
+		    weight = hanky.Weight;
+		    origin = hanky.Origin;
+		    producer = hanky.Producer;
+		    description = hanky.Description;
+		}
+		else if (Model.Product is PaperContainer pc)
+		{
+		    size = pc.Size;
+		    price = pc.Price;
+		    weight = pc.Weight;
+		    origin = pc.Origin;
+		    producer = pc.Producer;
+		    description = pc.Description;
+		}
+	}
+	<div id="wrapper">
+		<main id="main" class="">
+			<div class="shop-container">
+				<div class="container">
+					<div class="woocommerce-notices-wrapper"></div>
 				</div>
+					<div id="product-1065" class="product type-product post-1065 status-publish first instock shipping-taxable product-type-simple">x
+						<div class="custom-product-page ux-layout-737 ux-layout-scope-global">
+							<div class="row row-small" id="row-1351797598">
+								<div id="col-8640515" class="col medium-9 small-12 large-9">
+									<div class="col-inner" style="background-color:rgb(255,255,255);">
+										<div class="row" id="row-538377058">
+											<div id="col-1697764374" class="col medium-6 small-12 large-6">
+												<div class="col-inner">
+													<div class="product-images relative mb-half has-hover woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4">
+														<div class="badge-container is-larger absolute left top z-1"></div>
+														<div class="image-tools absolute top show-on-hover right z-3"></div>
+														<div class="woocommerce-product-gallery__wrapper product-gallery-slider slider slider-nav-small mb-half" data-flickity-options="{" cellalign":="" "center",="" "wraparound":="" true,="" "autoplay":="" false,="" "prevnextbuttons":true,="" "adaptiveheight":="" "imagesloaded":="" "lazyload":="" 1,="" "dragthreshold"="" :="" 15,="" "pagedots":="" "righttoleft":="" false="" }"="">
+															<div data-thumb="@Model.Product.ImagePath" data-thumb-alt="" class="woocommerce-product-gallery__image slide first">
+																<a href="@Model.Product.ImagePath">
+																	<img width="347" height="463" src="@Model.Product.ImagePath" class="wp-post-image skip-lazy" alt="ProductImage" data-caption="" data-src="@Model.Product.ImagePath" data-large_image="@Model.Product.ImagePath" data-large_image_width="347" data-large_image_height="463" decoding="async" fetchpriority="high"></a>
+															</div>  
+														</div>
+
+														<div class="image-tools absolute bottom left z-3">
+															<a href="#product-zoom" class="zoom-button button is-outline circle icon tooltip hide-for-small" title="Zoom">
+																<i class="icon-expand"></i>   
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div id="col-1384162081" class="col medium-6 small-12 large-6">
+												<div class="col-inner">
+													<div class="product-breadcrumb-container is-small">
+													<nav class="woocommerce-breadcrumb breadcrumbs uppercase">
+														<a href="@Url.Action("Index", "Home")">Trang chủ</a>
+														<span class="divider">/</span> 
+														<a href="#">Sản phẩm</a>
+														<span class="divider">/</span>
+														<a href="#">Giấy Vệ Sinh Cuộn Lớn</a>
+													</nav>
+												</div>
+
+													<div class="product-title-container is-smaller is-uppercase">
+													<h1 class="product-title product_title entry-title">
+														@Model.Product.Name
+													</h1>
+												</div>
+
+													<p></p>
+
+													<div class="box-thongso">
+														<table class="table table-striped">
+													    <tbody>
+															<tr>	
+															    <th>Kích thước</th>
+															    <td>@size</td>
+															</tr>
+															<tr>	
+															    <th>Khối lượng</th>
+															    <td>@weight</td>
+															</tr>
+															<tr>	
+															    <th>Giá</th>
+															    <td>@price</td>
+															</tr>
+															<tr>	
+															    <th>Xuất xứ</th>
+															    <td>@origin</td>
+															</tr>
+															<tr>	
+															    <th>Nhà sản xuất</th>
+															    <td>@producer</td>
+															</tr>
+															<tr>	
+															    <th>Vận chuyển</th>
+															    <td>Miễn phí vận chuyển</td>
+															</tr>
+														</tbody>
+													</table>
+													</div>
+
+													<p></p>
+
+													<div class="wpcf7 no-js" lang="vi" dir="ltr">
+														<form action="#" method="post" class="wpcf7-form" aria-label="Form liên hệ" novalidate>
+															<input type="hidden" name="_wpcf7" value="22">
+															<input type="hidden" name="_wpcf7_version" value="5.9.3">
+															<input type="hidden" name="_wpcf7_locale" value="vi">
+															<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f22-p1065-o1">
+															<input type="hidden" name="_wpcf7_container_post" value="1065">
+															
+															<input type="hidden" name="lay-tieu-de-sp" class="wpcf7-form-control wpcf7-hidden" value="@Model.Product.Name" autocomplete="off">
+
+															<div class="form-sdt">
+																<h3 class="title-formsp">ĐẶT HÀNG NHANH</h3>
+
+																<p>
+																	<input type="text" name="your-name" class="wpcf7-form-control" placeholder="Họ và tên..." required>
+																	<br>
+																	<input type="tel" name="so-dien-thoai" class="wpcf7-form-control" placeholder="Để lại số điện thoại, chúng tôi sẽ liên hệ lại ngay..." required>
+																</p>
+
+																<center>
+																  <p><input class="wpcf7-form-control wpcf7-submit" type="submit" value="GỬI NGAY"></p>
+																</center>
+															</div>
+													
+															<div class="wpcf7-response-output" aria-hidden="true"></div>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="woocommerce-tabs wc-tabs-wrapper container tabbed-content">
+										<ul class="tabs wc-tabs product-tabs small-nav-collapse nav nav-uppercase nav-line nav-left" role="tablist">
+											<li class="description_tab active" id="tab-title-description" role="presentation">
+												<a href="#tab-description" role="tab" aria-selected="true" aria-controls="tab-description">
+													Mô tả					
+												</a>
+											</li>
+										</ul>
+
+										<div class="tab-panels">
+											<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content active" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description">				
+												<p>@description</p>
+											</div>
 							
-					</div>
-	</div>
+										</div>
+									</div>
 
+										<div class="fb-comments" data-href="#" data-width="100%" data-numposts="10"></div>
 
+										<div class="related related-products-wrapper product-section">
 
-<div class="social-icons share-icons share-row relative full-width text-center"><a href="https://www.facebook.com/sharer.php?u=https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-etis-700g/" data-label="Facebook" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px'); return false;" target="_blank" class="icon primary button circle tooltip facebook" title="Share on Facebook" aria-label="Share on Facebook" rel="noopener nofollow"><i class="icon-facebook"></i></a><a href="https://twitter.com/share?url=https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-etis-700g/" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px'); return false;" target="_blank" class="icon primary button circle tooltip twitter" title="Share on Twitter" aria-label="Share on Twitter" rel="noopener nofollow"><i class="icon-twitter"></i></a><a href="mailto:?subject=Gi%E1%BA%A5y%20V%E1%BB%87%20Sinh%20Cu%E1%BB%99n%20L%E1%BB%9Bn%20Etis%20700g&body=Check%20this%20out%3A%20https%3A%2F%2Fxuonggiayvesinh.net%2Fsan-pham%2Fgiay-ve-sinh-cuon-lon-etis-700g%2F" class="icon primary button circle tooltip email" title="Email to a Friend" aria-label="Email to a Friend" rel="nofollow"><i class="icon-envelop"></i></a><a href="https://pinterest.com/pin/create/button?url=https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-etis-700g/&media=https://xuonggiayvesinh.net/wp-content/uploads/2024/03/Picture5.png&description=Gi%E1%BA%A5y%20V%E1%BB%87%20Sinh%20Cu%E1%BB%99n%20L%E1%BB%9Bn%20Etis%20700g" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px'); return false;" target="_blank" class="icon primary button circle tooltip pinterest" title="Pin on Pinterest" aria-label="Pin on Pinterest" rel="noopener nofollow"><i class="icon-pinterest"></i></a><a href="https://tumblr.com/widgets/share/tool?canonicalUrl=https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-etis-700g/" target="_blank" class="icon primary button circle tooltip tumblr" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px'); return false;" title="Share on Tumblr" aria-label="Share on Tumblr" rel="noopener nofollow"><i class="icon-tumblr"></i></a></div>
+											<h3 class="product-section-title container-width product-section-title-related pt-half pb-half uppercase">
+												Sản phẩm tương tự			
+											</h3>
 
-<div class="fb-comments" data-href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-etis-700g/" data-width="100%" data-numposts="10"></div>
+											<div class="row has-equal-box-heights equalize-box large-columns-4 medium-columns-2 small-columns-2 row-small slider row-slider slider-nav-reveal slider-nav-push" data-flickity-options="{" imagesloaded":="" true,="" "groupcells":="" "100%",="" "dragthreshold"="" :="" 5,="" "cellalign":="" "left","wraparound":="" true,"prevnextbuttons":="" true,"percentposition":="" true,"pagedots":="" false,="" "righttoleft":="" "autoplay"="" false}"="">
+												@if(Model.RelatedProducts != null){
+													@foreach (var item in Model.RelatedProducts)
+													{
+														<div class="product-small col has-hover product type-product post-1057 status-publish instock shipping-taxable product-type-simple">
+															<div class="col-inner">
+																<div class="badge-container absolute left top z-1"></div>
+																<div class="product-small box ">
+																	<div class="box-image">
+																		<div class="image-zoom">
+																			<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = Model.RelatedProductType})" aria-label="@item.Name">
+																				<img width="400" height="334" src="@item.ImagePath" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async">		
+																			</a>
+																		</div>
+																		<div class="image-tools is-small top right show-on-hover"></div>
+																		<div class="image-tools is-small hide-for-small bottom left show-on-hover"></div>
+																		<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover"></div>
+																	</div>
 
-	<div class="related related-products-wrapper product-section">
-
-					<h3 class="product-section-title container-width product-section-title-related pt-half pb-half uppercase">
-				Sản phẩm tương tự			</h3>
-		
-
-	
-  
-    <div class="row has-equal-box-heights equalize-box large-columns-4 medium-columns-2 small-columns-2 row-small slider row-slider slider-nav-reveal slider-nav-push" data-flickity-options="{" imagesloaded":="" true,="" "groupcells":="" "100%",="" "dragthreshold"="" :="" 5,="" "cellalign":="" "left","wraparound":="" true,"prevnextbuttons":="" true,"percentposition":="" true,"pagedots":="" false,="" "righttoleft":="" "autoplay"="" false}"="">
-
-  
-		<div class="product-small col has-hover product type-product post-1057 status-publish instock product_cat-giay-ve-sinh-cuon-lon has-post-thumbnail shipping-taxable product-type-simple">
-	<div class="col-inner">
-	
-<div class="badge-container absolute left top z-1">
-
-</div>
-	<div class="product-small box ">
-		<div class="box-image">
-			<div class="image-zoom">
-				<a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-700g-23-lop/" aria-label="Giấy Vệ Sinh Cuộn Lớn 700g 2&3 lớp">
-					<img width="400" height="334" src="images/Picture1-400x334.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async">				</a>
-			</div>
-			<div class="image-tools is-small top right show-on-hover">
-							</div>
-			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
-							</div>
-			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
-							</div>
-					</div>
-
-		<div class="box-text box-text-products text-center grid-style-2">
-			<div class="title-wrapper"><p class="name product-title woocommerce-loop-product__title"><a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-700g-23-lop/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">Giấy Vệ Sinh Cuộn Lớn 700g 2&3 lớp</a></p></div><div class="price-wrapper">
-	<span class="price"><span class="gia-lien-he">Giá: Liên hệ</span></span>
-</div>		</div>
-	</div>
-	<div class="nut-mua-ngay"><a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-700g-23-lop/">Đặt hàng ngay</a></div>	</div>
-</div><div class="product-small col has-hover product type-product post-850 status-publish instock product_cat-giay-ve-sinh-cuon-lon has-post-thumbnail shipping-taxable product-type-simple">
-	<div class="col-inner">
-	
-<div class="badge-container absolute left top z-1">
-
-</div>
-	<div class="product-small box ">
-		<div class="box-image">
-			<div class="image-zoom">
-				<a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-500g-23-lop/" aria-label="Giấy Vệ Sinh Cuộn Lớn 500g 2&3 Lớp">
-					<img width="400" height="334" src="images/Picture1-400x334.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async">				</a>
-			</div>
-			<div class="image-tools is-small top right show-on-hover">
-							</div>
-			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
-							</div>
-			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
-							</div>
-					</div>
-
-		<div class="box-text box-text-products text-center grid-style-2">
-			<div class="title-wrapper"><p class="name product-title woocommerce-loop-product__title"><a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-500g-23-lop/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">Giấy Vệ Sinh Cuộn Lớn 500g 2&3 Lớp</a></p></div><div class="price-wrapper">
-	<span class="price"><span class="gia-lien-he">Giá: Liên hệ</span></span>
-</div>		</div>
-	</div>
-	<div class="nut-mua-ngay"><a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-500g-23-lop/">Đặt hàng ngay</a></div>	</div>
-</div><div class="product-small col has-hover product type-product post-1056 status-publish last instock product_cat-giay-ve-sinh-cuon-lon has-post-thumbnail shipping-taxable product-type-simple">
-	<div class="col-inner">
-	
-<div class="badge-container absolute left top z-1">
-
-</div>
-	<div class="product-small box ">
-		<div class="box-image">
-			<div class="image-zoom">
-				<a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-800g-23-lop/" aria-label="Giấy Vệ Sinh Cuộn Lớn 800g 2&3 lớp">
-					<img width="400" height="334" src="images/Picture1-400x334.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy">				</a>
-			</div>
-			<div class="image-tools is-small top right show-on-hover">
-							</div>
-			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
-							</div>
-			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
-							</div>
-					</div>
-
-		<div class="box-text box-text-products text-center grid-style-2">
-			<div class="title-wrapper"><p class="name product-title woocommerce-loop-product__title"><a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-800g-23-lop/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">Giấy Vệ Sinh Cuộn Lớn 800g 2&3 lớp</a></p></div><div class="price-wrapper">
-	<span class="price"><span class="gia-lien-he">Giá: Liên hệ</span></span>
-</div>		</div>
-	</div>
-	<div class="nut-mua-ngay"><a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-800g-23-lop/">Đặt hàng ngay</a></div>	</div>
-</div><div class="product-small col has-hover product type-product post-1058 status-publish first instock product_cat-giay-ve-sinh-cuon-lon has-post-thumbnail shipping-taxable product-type-simple">
-	<div class="col-inner">
-	
-<div class="badge-container absolute left top z-1">
-
-</div>
-	<div class="product-small box ">
-		<div class="box-image">
-			<div class="image-zoom">
-				<a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-600g-23-lop/" aria-label="Giấy Vệ Sinh Cuộn Lớn 600g 2&3 lớp">
-					<img width="400" height="334" src="images/Picture1-400x334.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy">				</a>
-			</div>
-			<div class="image-tools is-small top right show-on-hover">
-							</div>
-			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
-							</div>
-			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
-							</div>
-					</div>
-
-		<div class="box-text box-text-products text-center grid-style-2">
-			<div class="title-wrapper"><p class="name product-title woocommerce-loop-product__title"><a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-600g-23-lop/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">Giấy Vệ Sinh Cuộn Lớn 600g 2&3 lớp</a></p></div><div class="price-wrapper">
-	<span class="price"><span class="gia-lien-he">Giá: Liên hệ</span></span>
-</div>		</div>
-	</div>
-	<div class="nut-mua-ngay"><a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-600g-23-lop/">Đặt hàng ngay</a></div>	</div>
-</div><div class="product-small col has-hover product type-product post-1144 status-publish instock product_cat-giay-ve-sinh-cuon-lon has-post-thumbnail shipping-taxable product-type-simple">
-	<div class="col-inner">
-	
-<div class="badge-container absolute left top z-1">
-
-</div>
-	<div class="product-small box ">
-		<div class="box-image">
-			<div class="image-zoom">
-				<a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-700g-mc/" aria-label="Giấy Vệ Sinh Cuộn Lớn 700g MC">
-					<img width="400" height="400" src="images/z5255387897448_58d446087449c96b41a44c4db8516e17-400x400.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="images/z5255387897448_58d446087449c96b41a44c4db8516e17-400x400.jpg 400w, images/z5255387897448_58d446087449c96b41a44c4db8516e17-100x100.jpg 100w, images/z5255387897448_58d446087449c96b41a44c4db8516e17.jpg 500w" sizes="(max-width: 400px) 100vw, 400px">				</a>
-			</div>
-			<div class="image-tools is-small top right show-on-hover">
-							</div>
-			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
-							</div>
-			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
-							</div>
-					</div>
-
-		<div class="box-text box-text-products text-center grid-style-2">
-			<div class="title-wrapper"><p class="name product-title woocommerce-loop-product__title"><a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-700g-mc/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">Giấy Vệ Sinh Cuộn Lớn 700g MC</a></p></div><div class="price-wrapper">
-	<span class="price"><span class="gia-lien-he">Giá: Liên hệ</span></span>
-</div>		</div>
-	</div>
-	<div class="nut-mua-ngay"><a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-700g-mc/">Đặt hàng ngay</a></div>	</div>
-</div><div class="product-small col has-hover product type-product post-1063 status-publish instock product_cat-giay-ve-sinh-cuon-lon has-post-thumbnail shipping-taxable product-type-simple">
-	<div class="col-inner">
-	
-<div class="badge-container absolute left top z-1">
-
-</div>
-	<div class="product-small box ">
-		<div class="box-image">
-			<div class="image-zoom">
-				<a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-etis-600g/" aria-label="Giấy Vệ Sinh Cuộn Lớn Etis 600g">
-					<img width="316" height="400" src="images/Picture4-316x400.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy">				</a>
-			</div>
-			<div class="image-tools is-small top right show-on-hover">
-							</div>
-			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
-							</div>
-			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
-							</div>
-					</div>
-
-		<div class="box-text box-text-products text-center grid-style-2">
-			<div class="title-wrapper"><p class="name product-title woocommerce-loop-product__title"><a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-etis-600g/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">Giấy Vệ Sinh Cuộn Lớn Etis 600g</a></p></div><div class="price-wrapper">
-	<span class="price"><span class="gia-lien-he">Giá: Liên hệ</span></span>
-</div>		</div>
-	</div>
-	<div class="nut-mua-ngay"><a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-etis-600g/">Đặt hàng ngay</a></div>	</div>
-</div><div class="product-small col has-hover product type-product post-1059 status-publish last instock product_cat-giay-ve-sinh-cuon-lon has-post-thumbnail shipping-taxable product-type-simple">
-	<div class="col-inner">
-	
-<div class="badge-container absolute left top z-1">
-
-</div>
-	<div class="product-small box ">
-		<div class="box-image">
-			<div class="image-zoom">
-				<a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-posy-2-lop/" aria-label="Giấy Vệ Sinh Cuộn Lớn Posy 2 lớp">
-					<img width="392" height="293" src="images/Picture2.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy">				</a>
-			</div>
-			<div class="image-tools is-small top right show-on-hover">
-							</div>
-			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
-							</div>
-			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
-							</div>
-					</div>
-
-		<div class="box-text box-text-products text-center grid-style-2">
-			<div class="title-wrapper"><p class="name product-title woocommerce-loop-product__title"><a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-posy-2-lop/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">Giấy Vệ Sinh Cuộn Lớn Posy 2 lớp</a></p></div><div class="price-wrapper">
-	<span class="price"><span class="gia-lien-he">Giá: Liên hệ</span></span>
-</div>		</div>
-	</div>
-	<div class="nut-mua-ngay"><a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-posy-2-lop/">Đặt hàng ngay</a></div>	</div>
-</div><div class="product-small col has-hover product type-product post-1148 status-publish first instock product_cat-giay-ve-sinh-cuon-lon has-post-thumbnail shipping-taxable product-type-simple">
-	<div class="col-inner">
-	
-<div class="badge-container absolute left top z-1">
-
-</div>
-	<div class="product-small box ">
-		<div class="box-image">
-			<div class="image-zoom">
-				<a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-600g-mc/" aria-label="Giấy Vệ Sinh Cuộn Lớn 600g MC">
-					<img width="400" height="400" src="images/z5255387897448_58d446087449c96b41a44c4db8516e17-400x400.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="images/z5255387897448_58d446087449c96b41a44c4db8516e17-400x400.jpg 400w, images/z5255387897448_58d446087449c96b41a44c4db8516e17-100x100.jpg 100w, images/z5255387897448_58d446087449c96b41a44c4db8516e17.jpg 500w" sizes="(max-width: 400px) 100vw, 400px">				</a>
-			</div>
-			<div class="image-tools is-small top right show-on-hover">
-							</div>
-			<div class="image-tools is-small hide-for-small bottom left show-on-hover">
-							</div>
-			<div class="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
-							</div>
-					</div>
-
-		<div class="box-text box-text-products text-center grid-style-2">
-			<div class="title-wrapper"><p class="name product-title woocommerce-loop-product__title"><a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-600g-mc/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">Giấy Vệ Sinh Cuộn Lớn 600g MC</a></p></div><div class="price-wrapper">
-	<span class="price"><span class="gia-lien-he">Giá: Liên hệ</span></span>
-</div>		</div>
-	</div>
-	<div class="nut-mua-ngay"><a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-600g-mc/">Đặt hàng ngay</a></div>	</div>
-</div>
+																	<div class="box-text box-text-products text-center grid-style-2">
+																		<div class="title-wrapper"><p class="name product-title woocommerce-loop-product__title">
+																				<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = Model.RelatedProductType})" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a></p>
+																		</div>
+																	</div>
+																</div>
+																<div class="nut-mua-ngay">
+																	<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = Model.RelatedProductType})">Đặt hàng ngay</a>
+																</div>	
+															</div>
+														</div>
+													}
+												}
 		</div>
-	</div>
+										</div>
+									</div>
 
-	
-
-
-		</div>
-				
-<style>
-#col-8640515 > .col-inner {
-  padding: 15px 15px 15px 15px;
-  margin: 15px 0px 0px 0px;
-  border-radius: 10px;
-}
-</style>
-	</div>
-
-	
-
-	<div id="col-62122611" class="col medium-3 small-12 large-3">
-				<div class="col-inner">
-			
-			
-
-<ul class="sidebar-wrapper ul-reset product-sidebar"><aside id="block_widget-2" class="widget block_widget">
-		
-			<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_103919474">
-								<div class="img-inner image-glow dark" style="margin:0px 0px 5px 0px;">
-			<img width="269" height="269" src="images/doi-tra-hang-hoa.jpg" class="attachment-large size-large" alt="Doi Tra Hang Hoa" decoding="async" loading="lazy" srcset="images/doi-tra-hang-hoa.jpg 269w, images/doi-tra-hang-hoa-100x100.jpg 100w" sizes="(max-width: 269px) 100vw, 269px">						
+									<style>
+									#col-8640515 > .col-inner {
+									  padding: 15px 15px 15px 15px;
+									  margin: 15px 0px 0px 0px;
+									  border-radius: 10px;
+									}
+									</style>
+								</div>
+							</div>		
+						
+						</div>
 					</div>
-								
-<style>
-#image_103919474 {
-  width: 100%;
-}
-</style>
-	</div>
-	
-
-	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_434382191">
-								<div class="img-inner image-glow dark">
-			<img width="269" height="334" src="images/thiet-ke-mien-phi.jpg" class="attachment-large size-large" alt="Thiet Ke Mien Phi" decoding="async" loading="lazy">						
-					</div>
-								
-<style>
-#image_434382191 {
-  width: 100%;
-}
-</style>
-	</div>
-	
-		</aside>
-		<aside id="woocommerce_product_categories-4" class="widget woocommerce widget_product_categories"><span class="widget-title shop-sidebar">Danh mục sản phẩm</span><div class="is-divider small"></div><ul class="product-categories"><li class="cat-item cat-item-96"><a href="https://xuonggiayvesinh.net/danh-muc/giay-an/">Giấy Ăn</a></li>
-<li class="cat-item cat-item-97"><a href="https://xuonggiayvesinh.net/danh-muc/giay-lau-tay/">Giấy Lau Tay</a></li>
-<li class="cat-item cat-item-15 current-cat"><a href="https://xuonggiayvesinh.net/danh-muc/giay-ve-sinh-cuon-lon/">Giấy Vệ Sinh Cuộn Lớn</a></li>
-<li class="cat-item cat-item-95"><a href="https://xuonggiayvesinh.net/danh-muc/giay-ve-sinh-cuon-nho/">Giấy Vệ Sinh Cuộn Nhỏ</a></li>
-<li class="cat-item cat-item-98"><a href="https://xuonggiayvesinh.net/danh-muc/hop-dung-giay-cuon-lon/">Hộp Đựng Giấy Cuộn Lớn</a></li>
-<li class="cat-item cat-item-99"><a href="https://xuonggiayvesinh.net/danh-muc/hop-dung-giay-lau-tay/">Hộp Đựng Giấy Lau Tay</a></li>
-<li class="cat-item cat-item-100"><a href="https://xuonggiayvesinh.net/danh-muc/may-say-tay/">Máy Sấy Tay</a></li>
-<li class="cat-item cat-item-101"><a href="https://xuonggiayvesinh.net/danh-muc/tui-dung-rac/">Túi Đựng Rác</a></li>
-</ul></aside><aside id="srpw_widget-9" class="widget widget_smart_recent_entries smart_recent_posts"><span class="widget-title shop-sidebar">Có thể bạn quan tâm</span><div class="is-divider small"></div><div class="srpw-block srpw-classic-style "><style>.srpw-thumbnail{
-width: 60px;
-height: 60px;
-border-radius: 5px;
-}</style><ul class="srpw-ul"><li class="srpw-li srpw-clearfix"><a class="srpw-img srpw-alignleft" href="https://xuonggiayvesinh.net/6-yeu-to-anh-huong-den-gia-thanh-va-chat-luong-in-bao-bi/" target="_self"><img width="96" height="96" src="images/Picture12.png" class=" srpw-thumbnail wp-post-image" alt="Kho Xưởng Sx và Cung Cấp Các Loại Giấy" decoding="async" loading="lazy" srcset="images/Picture12.png 414w, images/Picture12-400x400.png 400w, images/Picture12-100x100.png 100w" sizes="(max-width: 96px) 100vw, 96px"></a><div class="srpw-content"><a class="srpw-title" href="https://xuonggiayvesinh.net/6-yeu-to-anh-huong-den-gia-thanh-va-chat-luong-in-bao-bi/" target="_self">Kho Xưởng Sx và Cung Cấp Các Loại Giấy</a><div class="srpw-meta"></div></div></li><li class="srpw-li srpw-clearfix"><a class="srpw-img srpw-alignleft" href="https://xuonggiayvesinh.net/cac-ky-thuat-in-an-bao-bi-pho-bien-hien-nay/" target="_self"><img width="96" height="96" src="images/Picture9.png" class=" srpw-thumbnail wp-post-image" alt="Hộp Đựng Giấy Vệ Sinh Nhựa và Inox" decoding="async" loading="lazy" srcset="images/Picture9.png 377w, images/Picture9-100x100.png 100w" sizes="(max-width: 96px) 100vw, 96px"></a><div class="srpw-content"><a class="srpw-title" href="https://xuonggiayvesinh.net/cac-ky-thuat-in-an-bao-bi-pho-bien-hien-nay/" target="_self">Hộp Đựng Giấy Vệ Sinh Nhựa và Inox</a><div class="srpw-meta"></div></div></li><li class="srpw-li srpw-clearfix"><a class="srpw-img srpw-alignleft" href="https://xuonggiayvesinh.net/cac-loai-bao-bi-duoc-su-dung-pho-bien-nhat-tren-thi-truong/" target="_self"><img width="96" height="96" src="images/z5179926814644_b066cc8303f541051bac93c80e822913.jpg" class=" srpw-thumbnail wp-post-image" alt="Kho Máy Sấy Tay , Thiết Bị Vệ Sinh" decoding="async" loading="lazy" srcset="images/z5179926814644_b066cc8303f541051bac93c80e822913.jpg 720w, images/z5179926814644_b066cc8303f541051bac93c80e822913-400x400.jpg 400w, images/z5179926814644_b066cc8303f541051bac93c80e822913-600x600.jpg 600w, images/z5179926814644_b066cc8303f541051bac93c80e822913-100x100.jpg 100w" sizes="(max-width: 96px) 100vw, 96px"></a><div class="srpw-content"><a class="srpw-title" href="https://xuonggiayvesinh.net/cac-loai-bao-bi-duoc-su-dung-pho-bien-nhat-tren-thi-truong/" target="_self">Kho Máy Sấy Tay , Thiết Bị Vệ Sinh</a><div class="srpw-meta"></div></div></li><li class="srpw-li srpw-clearfix"><a class="srpw-img srpw-alignleft" href="https://xuonggiayvesinh.net/co-may-loai-tui-giay-kich-thuoc-tui-giay-chuan-nhat-hien-nay/" target="_self"><img width="128" height="53" src="images/BANNER-GIAY-VS-01.jpg" class=" srpw-thumbnail wp-post-image" alt="Nhà Cung Cấp Giấy Lớn Uy Tín Nhất Miền Bắc" decoding="async" loading="lazy" srcset="images/BANNER-GIAY-VS-01.jpg 1920w, images/BANNER-GIAY-VS-01-768x320.jpg 768w, images/BANNER-GIAY-VS-01-1536x640.jpg 1536w, images/BANNER-GIAY-VS-01-600x250.jpg 600w" sizes="(max-width: 128px) 100vw, 128px"></a><div class="srpw-content"><a class="srpw-title" href="https://xuonggiayvesinh.net/co-may-loai-tui-giay-kich-thuoc-tui-giay-chuan-nhat-hien-nay/" target="_self">Nhà Cung Cấp Giấy Lớn Uy Tín Nhất Miền Bắc</a><div class="srpw-meta"></div></div></li></ul></div><!-- Generated by http://wordpress.org/plugins/smart-recent-posts-widget/ --></aside></ul>
-
-
-		</div>
-				
-<style>
-#col-62122611 > .col-inner {
-  margin: 15px 0px 0px 0px;
-}
-</style>
-	</div>
-
-	
-
-</div>			<div id="product-sidebar" class="mfp-hide">
-				<div class="sidebar-inner">
-					<div class="hide-for-off-canvas" style="width:100%"><ul class="next-prev-thumbs is-small nav-right text-right">         <li class="prod-dropdown has-dropdown">
-               <a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-700g-mc/" rel="next" class="button icon is-outline circle">
-                  <i class="icon-angle-left"></i>              </a>
-              <div class="nav-dropdown">
-                <a title="Giấy Vệ Sinh Cuộn Lớn 700g MC" href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-700g-mc/">
-                <img width="100" height="100" src="images/z5255387897448_58d446087449c96b41a44c4db8516e17-100x100.jpg" class="attachment-woocommerce_gallery_thumbnail size-woocommerce_gallery_thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="images/z5255387897448_58d446087449c96b41a44c4db8516e17-100x100.jpg 100w, images/z5255387897448_58d446087449c96b41a44c4db8516e17-400x400.jpg 400w, images/z5255387897448_58d446087449c96b41a44c4db8516e17.jpg 500w" sizes="(max-width: 100px) 100vw, 100px"></a>
-              </div>
-          </li>
-               <li class="prod-dropdown has-dropdown">
-               <a href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-etis-600g/" rel="next" class="button icon is-outline circle">
-                  <i class="icon-angle-right"></i>              </a>
-              <div class="nav-dropdown">
-                  <a title="Giấy Vệ Sinh Cuộn Lớn Etis 600g" href="https://xuonggiayvesinh.net/san-pham/giay-ve-sinh-cuon-lon-etis-600g/">
-                  <img width="100" height="100" src="images/Picture4-100x100.png" class="attachment-woocommerce_gallery_thumbnail size-woocommerce_gallery_thumbnail wp-post-image" alt="" decoding="async" loading="lazy"></a>
-              </div>
-          </li>
-      </ul></div>
-		<aside id="block_widget-2" class="widget block_widget">
-		
-			<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_103919474">
-								<div class="img-inner image-glow dark" style="margin:0px 0px 5px 0px;">
-			<img width="269" height="269" src="images/doi-tra-hang-hoa.jpg" class="attachment-large size-large" alt="Doi Tra Hang Hoa" decoding="async" loading="lazy" srcset="images/doi-tra-hang-hoa.jpg 269w, images/doi-tra-hang-hoa-100x100.jpg 100w" sizes="(max-width: 269px) 100vw, 269px">						
-					</div>
-								
-<style>
-#image_103919474 {
-  width: 100%;
-}
-</style>
-	</div>
-	
-
-	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_434382191">
-								<div class="img-inner image-glow dark">
-			<img width="269" height="334" src="images/thiet-ke-mien-phi.jpg" class="attachment-large size-large" alt="Thiet Ke Mien Phi" decoding="async" loading="lazy">						
-					</div>
-								
-<style>
-#image_434382191 {
-  width: 100%;
-}
-</style>
-	</div>
-	
-		</aside>
-		<aside id="woocommerce_product_categories-4" class="widget woocommerce widget_product_categories"><span class="widget-title shop-sidebar">Danh mục sản phẩm</span><div class="is-divider small"></div><ul class="product-categories"><li class="cat-item cat-item-96"><a href="https://xuonggiayvesinh.net/danh-muc/giay-an/">Giấy Ăn</a></li>
-<li class="cat-item cat-item-97"><a href="https://xuonggiayvesinh.net/danh-muc/giay-lau-tay/">Giấy Lau Tay</a></li>
-<li class="cat-item cat-item-15 current-cat"><a href="https://xuonggiayvesinh.net/danh-muc/giay-ve-sinh-cuon-lon/">Giấy Vệ Sinh Cuộn Lớn</a></li>
-<li class="cat-item cat-item-95"><a href="https://xuonggiayvesinh.net/danh-muc/giay-ve-sinh-cuon-nho/">Giấy Vệ Sinh Cuộn Nhỏ</a></li>
-<li class="cat-item cat-item-98"><a href="https://xuonggiayvesinh.net/danh-muc/hop-dung-giay-cuon-lon/">Hộp Đựng Giấy Cuộn Lớn</a></li>
-<li class="cat-item cat-item-99"><a href="https://xuonggiayvesinh.net/danh-muc/hop-dung-giay-lau-tay/">Hộp Đựng Giấy Lau Tay</a></li>
-<li class="cat-item cat-item-100"><a href="https://xuonggiayvesinh.net/danh-muc/may-say-tay/">Máy Sấy Tay</a></li>
-<li class="cat-item cat-item-101"><a href="https://xuonggiayvesinh.net/danh-muc/tui-dung-rac/">Túi Đựng Rác</a></li>
-</ul></aside><aside id="srpw_widget-9" class="widget widget_smart_recent_entries smart_recent_posts"><span class="widget-title shop-sidebar">Có thể bạn quan tâm</span><div class="is-divider small"></div><div class="srpw-block srpw-classic-style "><style>.srpw-thumbnail{
-width: 60px;
-height: 60px;
-border-radius: 5px;
-}</style><ul class="srpw-ul"><li class="srpw-li srpw-clearfix"><a class="srpw-img srpw-alignleft" href="https://xuonggiayvesinh.net/6-yeu-to-anh-huong-den-gia-thanh-va-chat-luong-in-bao-bi/" target="_self"><img width="96" height="96" src="images/Picture12.png" class=" srpw-thumbnail wp-post-image" alt="Kho Xưởng Sx và Cung Cấp Các Loại Giấy" decoding="async" loading="lazy" srcset="images/Picture12.png 414w, images/Picture12-400x400.png 400w, images/Picture12-100x100.png 100w" sizes="(max-width: 96px) 100vw, 96px"></a><div class="srpw-content"><a class="srpw-title" href="https://xuonggiayvesinh.net/6-yeu-to-anh-huong-den-gia-thanh-va-chat-luong-in-bao-bi/" target="_self">Kho Xưởng Sx và Cung Cấp Các Loại Giấy</a><div class="srpw-meta"></div></div></li><li class="srpw-li srpw-clearfix"><a class="srpw-img srpw-alignleft" href="https://xuonggiayvesinh.net/cac-ky-thuat-in-an-bao-bi-pho-bien-hien-nay/" target="_self"><img width="96" height="96" src="images/Picture9.png" class=" srpw-thumbnail wp-post-image" alt="Hộp Đựng Giấy Vệ Sinh Nhựa và Inox" decoding="async" loading="lazy" srcset="images/Picture9.png 377w, images/Picture9-100x100.png 100w" sizes="(max-width: 96px) 100vw, 96px"></a><div class="srpw-content"><a class="srpw-title" href="https://xuonggiayvesinh.net/cac-ky-thuat-in-an-bao-bi-pho-bien-hien-nay/" target="_self">Hộp Đựng Giấy Vệ Sinh Nhựa và Inox</a><div class="srpw-meta"></div></div></li><li class="srpw-li srpw-clearfix"><a class="srpw-img srpw-alignleft" href="https://xuonggiayvesinh.net/cac-loai-bao-bi-duoc-su-dung-pho-bien-nhat-tren-thi-truong/" target="_self"><img width="96" height="96" src="images/z5179926814644_b066cc8303f541051bac93c80e822913.jpg" class=" srpw-thumbnail wp-post-image" alt="Kho Máy Sấy Tay , Thiết Bị Vệ Sinh" decoding="async" loading="lazy" srcset="images/z5179926814644_b066cc8303f541051bac93c80e822913.jpg 720w, images/z5179926814644_b066cc8303f541051bac93c80e822913-400x400.jpg 400w, images/z5179926814644_b066cc8303f541051bac93c80e822913-600x600.jpg 600w, images/z5179926814644_b066cc8303f541051bac93c80e822913-100x100.jpg 100w" sizes="(max-width: 96px) 100vw, 96px"></a><div class="srpw-content"><a class="srpw-title" href="https://xuonggiayvesinh.net/cac-loai-bao-bi-duoc-su-dung-pho-bien-nhat-tren-thi-truong/" target="_self">Kho Máy Sấy Tay , Thiết Bị Vệ Sinh</a><div class="srpw-meta"></div></div></li><li class="srpw-li srpw-clearfix"><a class="srpw-img srpw-alignleft" href="https://xuonggiayvesinh.net/co-may-loai-tui-giay-kich-thuoc-tui-giay-chuan-nhat-hien-nay/" target="_self"><img width="128" height="53" src="images/BANNER-GIAY-VS-01.jpg" class=" srpw-thumbnail wp-post-image" alt="Nhà Cung Cấp Giấy Lớn Uy Tín Nhất Miền Bắc" decoding="async" loading="lazy" srcset="images/BANNER-GIAY-VS-01.jpg 1920w, images/BANNER-GIAY-VS-01-768x320.jpg 768w, images/BANNER-GIAY-VS-01-1536x640.jpg 1536w, images/BANNER-GIAY-VS-01-600x250.jpg 600w" sizes="(max-width: 128px) 100vw, 128px"></a><div class="srpw-content"><a class="srpw-title" href="https://xuonggiayvesinh.net/co-may-loai-tui-giay-kich-thuoc-tui-giay-chuan-nhat-hien-nay/" target="_self">Nhà Cung Cấp Giấy Lớn Uy Tín Nhất Miền Bắc</a><div class="srpw-meta"></div></div></li></ul></div><!-- Generated by http://wordpress.org/plugins/smart-recent-posts-widget/ --></aside>				</div>
-			</div>
-
-	</div>
-
-	
-</div>
 
 		
-	</div><!-- shop container -->
-
-
+	</div>
 </main>
 
-<footer id="footer" class="footer-wrapper">
+    <footer id="footer" class="footer-wrapper">
 
-		<section class="section footer-section dark" id="section_1940169240">
-		<div class="bg section-bg fill bg-fill  bg-loaded">
+        <section class="section footer-section dark" id="section_169160229">
+            <div class="bg section-bg fill bg-fill  bg-loaded"></div>
+                <div class="section-content relative">
+                    <div class="row row-small" id="row-2006218840">
+                    <div id="col-851270230" class="col cot1 medium-6 small-12 large-3">
+                        <div class="col-inner">
+                            <h3><span style="font-size: 100%;">THÔNG TIN LIÊN HỆ</span></h3>
+                            <h4>Công Ty cung cấp giấy số một Gò Vấp</h4>
+                            <ul>
+                                <li><strong>Địa chỉ:Số 1142 Đường Nguyễn Khoái - Thanh Trì -Hà Nội</strong></li>
+                                <li><strong>Điện thoại / Zalo:</strong> 0329 042 522</li>
+                                <li><strong>Website:</strong> <a href="https://xuonggiayvesinh.net/">https://xuonggiayvesinh.net</a></li>
+                                <li><strong>Email:</strong> lavanvinh2000@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
 
-			
-			
-			
+                    <div id="col-62320599" class="col cot3 medium-6 small-12 large-3">
+                        <div class="col-inner">
+                            <h3><span style="font-size: 100%;">CAM KẾT CỦA CHÚNG TÔI</span></h3>
+                            <p>Với chữ Tín đặt lên hàng đầu cùng với phong cách tư vấn phục vụ tận tình với khách hàng thì Công Ty TNHH Thế Giới Giấy tin rằng sẽ đem đến sự tin tưởng và nhận được sự hài lòng nhất của khách hàng dành cho công ty.</p>
 
-		</div>
+                        </div>
+                    </div>
 
-		
+                    <div id="col-315899189" class="col cot2 medium-6 small-12 large-3">
+                        <div class="col-inner">
+                            <h3><span style="font-size: 100%;">HỖ TRỢ KHÁCH HÀNG</span></h3>
+                            <ul>
+                                <li><span style="font-size: 95%;"><a href="http://inan5.maugiaodien.com/quy-trinh-lam-viec">Quy trình làm việc</a></span></li>
+                                <li><span style="font-size: 95%;"><a href="http://inan5.maugiaodien.com/chinh-sach-bao-hanh-doi-tra">Bảo hành - đổi trả</a></span></li>
+                                <li><span style="font-size: 95%;"><a href="http://inan5.maugiaodien.com/hinh-thuc-thanh-toan">Hình thức thanh toán</a></span></li>
+                                <li><span style="font-size: 95%;"><a href="http://inan5.maugiaodien.com/chinh-sach-van-chuyen-giao-nhan">Vận chuyển - giao nhận</a></span></li>
+                                <li><span style="font-size: 95%;"><a href="http://inan5.maugiaodien.com/chinh-sach-bao-mat">Chính sách bảo mật</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="col-512366795" class="col cot4 medium-6 small-12 large-3">
+                        <div class="col-inner">
+                            <h3><span style="font-size: 100%;">FANPAGE FACEBOOK</span></h3>
+                            <p>
+                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgiayvesinhto&tabs=timeline&width=300&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1242551153353364" width="300" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		<div class="section-content relative">
-			
 
-<div class="row row-small" id="row-274962215">
-
-
-	<div id="col-2091184707" class="col cot1 medium-6 small-12 large-3">
-				<div class="col-inner">
-			
-			
-
-<h3><span style="font-size: 100%;">THÔNG TIN LIÊN HỆ</span></h3>
-<h4>Công Ty TNHH Thế Giới Giấy</h4>
-<ul>
-<li><strong>Địa chỉ:Số 1142 Đường Nguyễn Khoái - Thanh Trì -Hà Nội</strong></li>
-<li><strong>Điện thoại / Zalo:</strong> 0329 042 522</li>
-<li><strong>Website:</strong> <a href="https://xuonggiayvesinh.net/">https://xuonggiayvesinh.net</a></li>
-<li><strong>Email:</strong> lavanvinh2000@gmail.com</li>
-</ul>
-
-
-		</div>
-					</div>
-
-	
-
-	<div id="col-762226159" class="col cot3 medium-6 small-12 large-3">
-				<div class="col-inner">
-			
-			
-
-<h3><span style="font-size: 100%;">CAM KẾT CỦA CHÚNG TÔI</span></h3>
-<p>Với chữ Tín đặt lên hàng đầu cùng với phong cách tư vấn phục vụ tận tình với khách hàng thì Công Ty TNHH Thế Giới Giấy tin rằng sẽ đem đến sự tin tưởng và nhận được sự hài lòng nhất của khách hàng dành cho công ty.</p>
-
-		</div>
-					</div>
-
-	
-
-	<div id="col-2020125543" class="col cot2 medium-6 small-12 large-3">
-				<div class="col-inner">
-			
-			
-
-<h3><span style="font-size: 100%;">HỖ TRỢ KHÁCH HÀNG</span></h3>
-<ul>
-<li><span style="font-size: 95%;"><a href="http://inan5.maugiaodien.com/quy-trinh-lam-viec">Quy trình làm việc</a></span></li>
-<li><span style="font-size: 95%;"><a href="http://inan5.maugiaodien.com/chinh-sach-bao-hanh-doi-tra">Bảo hành - đổi trả</a></span></li>
-<li><span style="font-size: 95%;"><a href="http://inan5.maugiaodien.com/hinh-thuc-thanh-toan">Hình thức thanh toán</a></span></li>
-<li><span style="font-size: 95%;"><a href="http://inan5.maugiaodien.com/chinh-sach-van-chuyen-giao-nhan">Vận chuyển - giao nhận</a></span></li>
-<li><span style="font-size: 95%;"><a href="http://inan5.maugiaodien.com/chinh-sach-bao-mat">Chính sách bảo mật</a></span></li>
-</ul>
-
-		</div>
-					</div>
-
-	
-
-	<div id="col-1472822193" class="col cot4 medium-6 small-12 large-3">
-				<div class="col-inner">
-			
-			
-
-<h3><span style="font-size: 100%;">FANPAGE FACEBOOK</span></h3>
-<p><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgiayvesinhto&tabs=timeline&width=300&height=200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1242551153353364" width="300" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></p>
-
-		</div>
-					</div>
-
-	
-
+            <style>
+                #section_169160229 {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    background-color: #6ac358;
+                }
+            </style>
+        </section>
+    </footer>
 </div>
 
-		</div>
-
-		
-<style>
-#section_1940169240 {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #6ac358;
-}
-</style>
-	</section>
-	
-<div class="absolute-footer dark medium-text-center text-center">
-  <div class="container clearfix">
-
-    
-    <div class="footer-primary pull-left">
-            <div class="copyright-footer">
-        Copyright 2025 © <strong>Cung cấp bởi <a href="https://hazoweb.vn">Hazoweb</a></strong>      </div>
-          </div>
-  </div>
-</div>
-
-</footer>
-
-</div>
-
-<div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
+	<div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
 
 	
 	<div class="sidebar-menu no-scrollbar ">
@@ -887,177 +362,11 @@ border-radius: 5px;
 
 	
 </div>
-		
-			<style>
-				.w2w-pinkBg {
-					
-					background-image: linear-gradient(90deg,  , );
-				}
-			</style>
-			<div id="w2w-widget-flyout" class=" w2w-pos-fixed w2w-pinkBg">
-				<div id="button-contact-vr" class=" pos-">
-					<div id="gom-all-in-one">
-						<!-- v3 -->
-						
-						<!-- tiktok -->
-												<!-- end tiktok -->
-						
-						<!-- youtube -->
-												<!-- end youtube -->
-												
-						
-						
-						
-						
-						
-						
-													
-							<!-- Phone -->
-							<div id="phone-vr" class="button-contact">
-								<div class="phone-vr">
-									<div class="phone-vr-circle-fill"></div>
-									<div class="phone-vr-img-circle">
-										<a target="_blank" href="tel: 0329042522 ">				
-											<img src="images/phone.png">
-										</a>
-									</div>
-								</div>
-							</div>
-														<div class="phone-bar phone-bar-n">
-								<a href="tel:0329042522">
-									<span class="text-phone">0329042522</span>
-								</a>
-							</div>
-														<!-- end phone -->
-							
-						
-						
-						
-						
-					</div><!-- end v3 class gom-all-in-one -->
-
-									</div>
-			</div>
-
-							<!-- color phone -->
-				<style>
-					.phone-bar a,#phone-vr .phone-vr-circle-fill,#phone-vr .phone-vr-img-circle,#phone-vr .phone-bar a {
-					    background-color: #dd3333;
-					}
-					#phone-vr .phone-vr-circle-fill {
-					    opacity: 0.7;box-shadow: 0 0 0 0 #dd3333;
-					}
-					.phone-bar2 a,#phone-vr2 .phone-vr-circle-fill,#phone-vr2 .phone-vr-img-circle,#phone-vr2 .phone-bar a {
-					    background-color: ;
-					}
-					#phone-vr2 .phone-vr-circle-fill {
-					    opacity: 0.7;box-shadow: 0 0 0 0 ;
-					}
-					.phone-bar3 a,#phone-vr3 .phone-vr-circle-fill,#phone-vr3 .phone-vr-img-circle,#phone-vr3 .phone-bar a {
-					    background-color: ;
-					}
-					#phone-vr3 .phone-vr-circle-fill {
-					    opacity: 0.7;box-shadow: 0 0 0 0 ;
-					}
-				</style>
-				<!-- color phone -->
-									
- 	<div id="fb-root"></div>
-<script async="" defer="" crossorigin="anonymous" src="js/sdk.js#xfbml=1&version=v7.0&appId=196399137534418&autoLogAppEvents=1" nonce="YnfcbsTz"></script>    <div id="login-form-popup" class="lightbox-content mfp-hide">
-            	<div class="woocommerce">
-      		<div class="woocommerce-notices-wrapper"></div>
-<div class="account-container lightbox-inner">
-
-	
-			<div class="account-login-inner">
-
-				<h3 class="uppercase">Đăng nhập</h3>
-
-				<form class="woocommerce-form woocommerce-form-login login" method="post">
-
-					
-					<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-						<label for="username">Tên tài khoản hoặc địa chỉ email <span class="required">*</span></label>
-						<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="">					</p>
-					<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-						<label for="password">Mật khẩu <span class="required">*</span></label>
-						<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password">
-					</p>
-
-					
-					<p class="form-row">
-						<label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
-							<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever"> <span>Ghi nhớ mật khẩu</span>
-						</label>
-						<input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="27ca8aaec6"><input type="hidden" name="_wp_http_referer" value="/san-pham/giay-ve-sinh-cuon-lon-etis-700g/">						<button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="Đăng nhập">Đăng nhập</button>
-					</p>
-					<p class="woocommerce-LostPassword lost_password">
-						<a href="https://xuonggiayvesinh.net/tai-khoan/lost-password/">Quên mật khẩu?</a>
-					</p>
-
-					
-				</form>
-			</div>
-
-			
-</div>
-
-		</div>
-      	    </div>
-  
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-	<!-- Background of PhotoSwipe. It's a separate element as animating opacity is faster than rgba(). -->
-	<div class="pswp__bg"></div>
-
-	<!-- Slides wrapper with overflow:hidden. -->
-	<div class="pswp__scroll-wrap">
-
-		<!-- Container that holds slides.
-		PhotoSwipe keeps only 3 of them in the DOM to save memory.
-		Don't modify these 3 pswp__item elements, data is added later on. -->
-		<div class="pswp__container">
-			<div class="pswp__item"></div>
-			<div class="pswp__item"></div>
-			<div class="pswp__item"></div>
-		</div>
-
-		<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-		<div class="pswp__ui pswp__ui--hidden">
-
-			<div class="pswp__top-bar">
-
-				<!--  Controls are self-explanatory. Order can be changed. -->
-
-				<div class="pswp__counter"></div>
-
-				<button class="pswp__button pswp__button--close" aria-label="Đóng (Esc)"></button>
-
-				<button class="pswp__button pswp__button--zoom" aria-label="Phóng to/ thu nhỏ"></button>
-
-				<div class="pswp__preloader">
-					<div class="loading-spin"></div>
-				</div>
-			</div>
-
-			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-				<div class="pswp__share-tooltip"></div>
-			</div>
-
-			<button class="pswp__button--arrow--left" aria-label="Ảnh trước (mũi tên trái)"></button>
-
-			<button class="pswp__button--arrow--right" aria-label="Ảnh tiếp (mũi tên phải)"></button>
-
-			<div class="pswp__caption">
-				<div class="pswp__caption__center"></div>
-			</div>
-
-		</div>
-
-	</div>
-
-</div>
+		<style>
+		.ab {
+			background-image: linear-gradient(90deg,  , );
+			}
+		</style>
 	<script type="text/javascript">
 		(function () {
 			var c = document.body.className;
@@ -1069,11 +378,6 @@ border-radius: 5px;
 body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #087c37;--wp--preset--color--secondary: #6ac358;--wp--preset--color--success: #b3f031;--wp--preset--color--alert: #b20000;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}body { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: none;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-success-color{color: var(--wp--preset--color--success) !important;}.has-alert-color{color: var(--wp--preset--color--alert) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-success-background-color{background-color: var(--wp--preset--color--success) !important;}.has-alert-background-color{background-color: var(--wp--preset--color--alert) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-success-border-color{border-color: var(--wp--preset--color--success) !important;}.has-alert-border-color{border-color: var(--wp--preset--color--alert) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
 </style>
 <script type="text/javascript" src="js/index.js" id="swv-js"></script>
-<script type="text/javascript" id="contact-form-7-js-extra">
-/* <![CDATA[ */
-var wpcf7 = {"api":{"root":"https:\/\/xuonggiayvesinh.net\/wp-json\/","namespace":"contact-form-7\/v1"}};
-/* ]]> */
-</script>
 <script type="text/javascript" src="js/index_1.js" id="contact-form-7-js"></script>
 <script type="text/javascript" id="woocommerce-js-extra">
 /* <![CDATA[ */
@@ -1082,119 +386,9 @@ var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":
 </script>
 <script type="text/javascript" src="js/woocommerce.min.js" id="woocommerce-js" data-wp-strategy="defer"></script>
 <script type="text/javascript" src="js/sourcebuster.min.js" id="sourcebuster-js-js"></script>
-<script type="text/javascript" id="wc-order-attribution-js-extra">
-/* <![CDATA[ */
-var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"ajaxurl":"https:\/\/xuonggiayvesinh.net\/wp-admin\/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
-/* ]]> */
-</script>
 <script type="text/javascript" src="js/order-attribution.min.js" id="wc-order-attribution-js"></script>
 <script type="text/javascript" src="js/flatsome-live-search.js" id="flatsome-live-search-js"></script>
 <script type="text/javascript" src="js/hoverIntent.min.js" id="hoverIntent-js"></script>
-<script type="text/javascript" id="flatsome-js-js-extra">
-/* <![CDATA[ */
-var flatsomeVars = {"theme":{"version":"3.18.1"},"ajaxurl":"https:\/\/xuonggiayvesinh.net\/wp-admin\/admin-ajax.php","rtl":"","sticky_height":"70","stickyHeaderHeight":"0","scrollPaddingTop":"0","assets_url":"https:\/\/xuonggiayvesinh.net\/wp-content\/themes\/flatsome\/assets\/","lightbox":{"close_markup":"<button title=\"%title%\" type=\"button\" class=\"mfp-close\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-x\"><line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"><\/line><line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"><\/line><\/svg><\/button>","close_btn_inside":false},"user":{"can_edit_pages":false},"i18n":{"mainMenu":"Main Menu","toggleButton":"Toggle"},"options":{"cookie_notice_version":"1","swatches_layout":false,"swatches_disable_deselect":false,"swatches_box_select_event":false,"swatches_box_behavior_selected":false,"swatches_box_update_urls":"1","swatches_box_reset":false,"swatches_box_reset_limited":false,"swatches_box_reset_extent":false,"swatches_box_reset_time":300,"search_result_latency":"0"},"is_mini_cart_reveal":"1"};
-/* ]]> */
-</script>
 <script type="text/javascript" src="js/flatsome.js" id="flatsome-js-js"></script>
 <script type="text/javascript" src="js/woocommerce.js" id="flatsome-theme-woocommerce-js-js"></script>
-            
-            <style>
-								.phonering-alo-phone.phonering-alo-hover .phonering-alo-ph-img-circle, .phonering-alo-phone:hover .phonering-alo-ph-img-circle,
-            	.phonering-alo-phone.phonering-alo-green .phonering-alo-ph-img-circle, #phonering-alo-phoneIcon .number a,
-				#phonering-alo-phoneIcon .number a, #ft-contact-icons li span.ab {
-					background-color: #e30016;
-				}
-				.phonering-alo-phone.phonering-alo-hover .phonering-alo-ph-circle, .phonering-alo-phone:hover .phonering-alo-ph-circle,
-				.phonering-alo-phone.phonering-alo-green .phonering-alo-ph-circle {
-					border-color: #e30016;
-				}
-				#phonering-alo-phoneIcon .number i, #ft-contact-icons li span.ab i{
-					color: #e30016;
-				}
-								
-								#ft-contact-icons li a:hover span.ab,.phonering-alo-phone.phonering-alo-green.phonering-alo-hover .phonering-alo-ph-img-circle, .phonering-alo-phone.phonering-alo-green:hover .phonering-alo-ph-img-circle, #phonering-alo-phoneIcon:hover .number a{
-					background-color:#81b917;
-				}
-				.phonering-alo-phone.phonering-alo-green.phonering-alo-hover .phonering-alo-ph-circle, 
-				.phonering-alo-phone.phonering-alo-green:hover .phonering-alo-ph-circle, #phonering-alo-phoneIcon:hover .number a{
-					border-color: #81b917;
-				}
-				#phonering-alo-phoneIcon:hover .number i, #ft-contact-icons li a:hover span.ab i{
-					color: #81b917;
-				}
-								
-									#ft-contact-icons li span.ab, #phonering-alo-phoneIcon .number a{
-						color:#fff;
-					}
-								
-									.phonering-alo-phone{
-						bottom:5px;
-					}
-								
-									.show-all-icon, #ft-contact-icons{
-						bottom:20px;
-					}
-								
-									.show-all-icon, .show-all-icon i{
-						color:#e30016;
-					}
-								
-            </style>
-            
-            <script>
-            	jQuery(document).ready(function(e) {
-					jQuery(".js-show-all-icon").click(function(e) {
-                        if(jQuery("#ft-contact-icons").hasClass('active')){
-							jQuery("#ft-contact-icons").removeClass('active');
-							jQuery(this).removeClass('hide-me');
-						}else{
-							jQuery("#ft-contact-icons").addClass('active');
-							jQuery(this).addClass('hide-me');
-						}
-						return false;
-                    });
-					
-					jQuery(".js-hide-all-icon").click(function(e) {
-                        jQuery(".js-show-all-icon").click();
-						return false;
-                    });
-				});
-            </script>
-			
-			            <a id="ws247-aio-ct-button-show-all-icon" href="#" class="hide-me js-show-all-icon show-all-icon contact-icons-right"><span>Liên hệ</span><i class="fas fa-long-arrow-alt-up"></i></a>
-			<ul id="ft-contact-icons" class="active contact-icons-right">
-            					<li class="icon-zalo">
-					<a target="_blank" href="https://zalo.me/0329042522">
-                    	<span class="icon"></span>
-                                                <span class="ab"><i class="fas fa-caret-left"></i> <label>Chat Zalo</label></span>
-                                            </a>
-                    
-				</li>
-				                
-								<li class="icon-messenger">
-					<a target="_blank" href="https://www.messenger.com/t/giayvesinhto">
-                    	<span class="icon"></span>
-                                                <span class="ab"><i class="fas fa-caret-left"></i> <label>Nhắn Messenger</label></span>
-                                            </a>
-                    
-				</li>
-				                
-                				<li class="icon-phone">
-					<a href="tel:0329042522" target="_blank">
-                    	<span class="icon"><i class="fas fa-phone" aria-hidden="true"></i></span>
-                                                <span class="ab"><i class="fas fa-caret-left"></i> <label>NV Kinh doanh</label></span>
-                                            </a>
-                   	
-				</li>
-								
-				
-				
-								
-				
-				
-				
-				                
-                <li><a href="#" class="js-hide-all-icon"><span class="icon"><i class="fas fa-times"></i></span></a></li>
-				
-			</ul>
 </body>

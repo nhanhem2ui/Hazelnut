@@ -5,150 +5,12 @@
 @model Hazelnut.Models.ViewModels.IndexViewModel
 <body class="home page-template page-template-page-blank page-template-page-blank-php page page-id-20 theme-flatsome woocommerce-js header-shadow lightbox nav-dropdown-has-arrow nav-dropdown-has-shadow nav-dropdown-has-border catalog-mode">
     <div id="wrapper">
-        <header id="header" class="header has-sticky sticky-jump">
-            <div class="header-wrapper">
-                <div id="masthead" class="header-main ">
-                    <div class="header-inner flex-row container logo-left medium-logo-center" role="navigation">
-
-                        <!-- Logo -->
-                        <div id="logo" class="flex-col logo">
-                            <!-- Header logo -->
-                            <a href="#" title="Hazelnut" rel="home">
-                                <img width="1920" height="442" src="images/HazelnutLogo-nobackground.png" class="header_logo header-logo" alt="Công Ty TNHH Thế Giới Giấy"><img width="1920" height="442" src="images/Logo-Giayvesinh.png" class="header-logo-dark" alt="Công Ty TNHH Thế Giới Giấy">
-                            </a>
-                        </div>
-
-                        <!-- Mobile Left Elements -->
-                        <div class="flex-col show-for-medium flex-left">
-                            <ul class="mobile-nav nav nav-left ">
-                                <li class="nav-icon has-icon">
-                                    <div class="header-button">
-                                        <a href="#" data-open="#main-menu" data-pos="left" data-bg="main-menu-overlay" data-color="" class="icon primary button circle is-small" aria-label="Menu" aria-controls="main-menu" aria-expanded="false">
-                                            <i class="icon-menu"></i>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="flex-col hide-for-medium flex-left flex-grow">
-                            <ul class="header-nav header-nav-main nav nav-left  nav-uppercase">
-                                <li class="header-search-form search-form html relative has-icon">
-                                    <div class="header-search-form-wrapper">
-                                        <div class="searchform-wrapper ux-search-box relative is-normal">
-                                            <form role="search" method="get" class="searchform" action="https://xuonggiayvesinh.net/">
-                                                <div class="flex-row relative">
-                                                    <div class="flex-col flex-grow">
-                                                        <label class="screen-reader-text" for="woocommerce-product-search-field-0">Tìm kiếm:</label>
-                                                        <input type="search" id="woocommerce-product-search-field-0" class="search-field mb-0" placeholder="Nhập từ khóa cần tìm..." value="" name="s">
-                                                        <input type="hidden" name="post_type" value="product">
-                                                    </div>
-                                                    <div class="flex-col">
-                                                        <button type="submit" value="Tìm kiếm" class="ux-search-submit submit-button secondary button  icon mb-0" aria-label="Submit">
-                                                            <i class="icon-search"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="live-search-results text-left z-top"></div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- Right Elements -->
-                        <div class="flex-col hide-for-medium flex-right">
-                            <ul class="header-nav header-nav-main nav nav-right  nav-uppercase">
-                                <li class="html header-button-2">
-                                    <div class="header-button">
-                                        <a href="/khuyen-mai" class="button success is-bevel is-small" style="border-radius:99px;">
-                                            <span>Khuyến mãi</span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="header-divider"></li>
-                                <li class="html header-social-icons ml-0">
-                                    <div class="social-icons follow-icons">
-                                        <a href="#" target="_blank" data-label="Facebook" class="icon primary button circle facebook tooltip" title="Follow on Facebook" aria-label="Follow on Facebook" rel="noopener nofollow">
-                                            <i class="icon-facebook"></i>
-                                        </a>
-                                        <a href="#" target="_blank" data-label="TikTok" class="icon primary button circle tiktok tooltip" title="Follow on TikTok" aria-label="Follow on TikTok" rel="noopener nofollow">
-                                            <i class="icon-tiktok"></i>
-                                        </a>
-                                        <a href="#" data-label="YouTube" target="_blank" class="icon primary button circle youtube tooltip" title="Follow on YouTube" aria-label="Follow on YouTube" rel="noopener nofollow">
-                                            <i class="icon-youtube"></i>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Mobile Right Elements -->
-                        <div class="flex-col show-for-medium flex-right">
-                            <ul class="mobile-nav nav nav-right">
-                                <li class="header-search header-search-lightbox has-icon">
-                                    <div class="header-button">
-                                        <a href="#search-lightbox" aria-label="Tìm kiếm" data-open="#search-lightbox" data-focus="input.search-field" class="icon primary button circle is-small">
-                                            <i class="icon-search" style="font-size:16px;"></i>
-                                        </a>
-                                    </div>
-
-                                    <div id="search-lightbox" class="mfp-hide dark text-center">
-                                        <div class="searchform-wrapper ux-search-box relative is-large">
-                                            <form role="search" method="get" class="searchform" action="https://xuonggiayvesinh.net/">
-                                                <div class="flex-row relative">
-                                                    <div class="flex-col flex-grow">
-                                                        <label class="screen-reader-text" for="woocommerce-product-search-field-1">Tìm kiếm:</label>
-                                                        <input type="search" id="woocommerce-product-search-field-1" class="search-field mb-0" placeholder="Nhập từ khóa cần tìm..." value="" name="s">
-                                                        <input type="hidden" name="post_type" value="product">
-                                                    </div>
-                                                    <div class="flex-col">
-                                                        <button type="submit" value="Tìm kiếm" class="ux-search-submit submit-button secondary button icon mb-0" aria-label="Submit">
-                                                            <i class="icon-search"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="live-search-results text-left z-top"></div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-                <div id="wide-nav" class="header-bottom wide-nav nav-dark hide-for-medium">
-                    <div class="flex-row container">
-                        <div class="flex-col hide-for-medium flex-left">
-                            <ul class="nav header-nav header-bottom-nav nav-left  nav-box nav-size-medium nav-uppercase">
-                                <li id="menu-item-557" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-20 current_page_item menu-item-557 active menu-item-design-default"><a href="https://xuonggiayvesinh.net/" aria-current="page" class="nav-top-link"><i class="fa fa-home"></i></a></li>
-                                <li id="menu-item-565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-565 menu-item-design-default"><a href="https://xuonggiayvesinh.net/gioi-thieu/" class="nav-top-link">Giới thiệu</a></li>
-                                <li id="menu-item-541" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-541 menu-item-design-default"><a href="https://xuonggiayvesinh.net/danh-muc/giay-ve-sinh-cuon-lon/" class="nav-top-link">Giấy Vệ Sinh Cuộn Lớn</a></li>
-                                <li id="menu-item-1038" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1038 menu-item-design-default"><a href="https://xuonggiayvesinh.net/danh-muc/giay-an/" class="nav-top-link">Giấy Ăn</a></li>
-                                <li id="menu-item-1039" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1039 menu-item-design-default"><a href="https://xuonggiayvesinh.net/danh-muc/giay-lau-tay/" class="nav-top-link">Giấy Lau Tay</a></li>
-                                <li id="menu-item-1040" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1040 menu-item-design-default"><a href="https://xuonggiayvesinh.net/danh-muc/giay-ve-sinh-cuon-nho/" class="nav-top-link">Giấy Vệ Sinh Cuộn Nhỏ</a></li>
-                                <li id="menu-item-1041" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1041 menu-item-design-default"><a href="https://xuonggiayvesinh.net/danh-muc/hop-dung-giay-cuon-lon/" class="nav-top-link">Hộp Đựng Giấy Cuộn Lớn</a></li>
-                            </ul>
-                        </div>
-                        <div class="flex-col hide-for-medium flex-right flex-grow">
-                            <ul class="nav header-nav header-bottom-nav nav-right  nav-box nav-size-medium nav-uppercase"></ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="header-bg-container fill">
-                    <div class="header-bg-image fill"></div>
-                    <div class="header-bg-color fill"></div>
-                </div>
-            </div>
-        </header>
-
         <main id="main" class="">
             <div id="content" role="main" class="content-area">
-                <div class="slider-wrapper relative" id="slider-414672678">
+
+                @* <div class="slider-wrapper relative" id="slider-414672678">
                     <div class="slider slider-nav-circle slider-nav-large slider-nav-light slider-style-normal" data-flickity-options="{
-            " cellalign": "center" , "imagesloaded" : true, "lazyload" : 1, "freescroll" : false, "wraparound" : true, "autoplay" : 6000, "pauseautoplayonhover" : true, "prevnextbuttons" : "contain" , "adaptiveheight" : true, "dragthreshold" : 10, "percentposition" : true, "pagedots" : true, "righttoleft" : false, "draggable" : true, "selectedattraction" : 0.1, "parallax" : 0, "friction" : 0.6 }">
+                        " cellalign": "center" , "imagesloaded" : true, "lazyload" : 1, "freescroll" : false, "wraparound" : true, "autoplay" : 6000, "pauseautoplayonhover" : true, "prevnextbuttons" : "contain" , "adaptiveheight" : true, "dragthreshold" : 10, "percentposition" : true, "pagedots" : true, "righttoleft" : false, "draggable" : true, "selectedattraction" : 0.1, "parallax" : 0, "friction" : 0.6 }">
 
                         <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_342813815">
                             <div class="img-inner dark">
@@ -173,7 +35,8 @@
                         </div>
                     </div>
                     <div class="loading-spin dark large centered"></div>
-                </div>
+                </div> *@
+
 <h1 style="display:none;">Trang chủ</h1>
 
 	<section class="section block-sp" id="section_698767634">

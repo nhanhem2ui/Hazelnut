@@ -10,5 +10,6 @@ namespace Hazelnut.Models
         public int ProductId { get; set; }
         public string Name { get; set; }
         public string? ImagePath { get; set; }
+        
     }
 }
