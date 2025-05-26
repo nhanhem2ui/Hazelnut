@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
-<html lang="vi" prefix="og: https://ogp.me/ns#" class="loading-site js">
+<html lang="vi" class="loading-site js">
 <head>
     <meta charset="UTF-8">
-    <script async="" src="js/gtm.js"></script>
+    <script async src="~/js/gtm.js" asp-append-version="true"></script>
     <script>(function (html) { html.className = html.className.replace(/\bno-js\b/, 'js') })(document.documentElement);</script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hazelnut</title>
@@ -247,43 +247,48 @@
             }
         }
     </style>
-    <link rel="stylesheet" id="wpshare247.com_aio_ct_button.css-css" href="css/aio_ct_button.css" type="text/css" media="all">
-    <link rel="stylesheet" id="wpshare247.com_font-awesome-5.6.1_css-css" href="css/all.min.css" type="text/css" media="all">
-    <link rel="stylesheet" id="contact-form-7-css" href="css/styles.css" type="text/css" media="all">
-    <link rel="stylesheet" id="fa5-css" href="css/all.css" type="text/css" media="all">
-    <link rel="stylesheet" id="fa5-v4-shims-css" href="css/v4-shims.css" type="text/css" media="all">
-    <link rel="stylesheet" id="aio-tools-css" href="css/aio-tools-public.css" type="text/css" media="all">
-    <style id="woocommerce-inline-inline-css" type="text/css">
-        .woocommerce form .form-row .required {
-            visibility: visible;
-        }
-    </style>
-    <link rel="stylesheet" id="font-awesome-official-css" href="css/all_1.css" type="text/css" media="all" crossorigin="anonymous">
-    <link rel="stylesheet" id="srpw-style-css" href="css/srpw-frontend.css" type="text/css" media="all">
-    <link rel="stylesheet" id="flatsome-main-css" href="css/flatsome.css" type="text/css" media="all">
-    <style id="flatsome-main-inline-css" type="text/css">
-        @@font-face {
-            font-family: "fl-icons";
-            font-display: block;
-            src: url(fonts/fl-icons_1.eot);
-            src: url(fonts/fl-icons.eot#iefix?v=3.18.1) format("embedded-opentype"), url(fonts/fl-icons.woff2) format("woff2"), url(fonts/fl-icons.ttf) format("truetype"), url(fonts/fl-icons.woff) format("woff"), url(images/fl-icons.svg#fl-icons) format("svg");
-        }
-    </style>
-    <link rel="stylesheet" id="flatsome-shop-css" href="css/flatsome-shop.css" type="text/css" media="all">
-    <link rel="stylesheet" id="flatsome-style-css" href="css/style.css" type="text/css" media="all">
-    <link rel="stylesheet" id="flatsome-googlefonts-css" href="//fonts.googleapis.com/css?family=Roboto%3Aregular%2C700%2Cregular%2Cregular%2Cregular&display=swap&ver=3.9" type="text/css" media="all">
-    <link rel="stylesheet" id="font-awesome-official-v4shim-css" href="css/v4-shims_1.css" type="text/css" media="all" crossorigin="anonymous">
-    <script type="text/javascript" src="js/jquery.min.js" id="jquery-core-js"></script>
-    <script type="text/javascript" src="js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
-    <script type="text/javascript" src="js/aio-tools-public.js" id="aio-tools-js"></script>
-    <script type="text/javascript" src="js/jquery.blockUI.min.js" id="jquery-blockui-js" data-wp-strategy="defer"></script>
-    <script type="text/javascript" id="wc-add-to-cart-js-extra">
-        /* <![CDATA[ */
-        var wc_add_to_cart_params = { "ajax_url": "\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "Xem gi\u1ecf h\u00e0ng", "cart_url": "https:\/\/xuonggiayvesinh.net\/gio-hang\/", "is_cart": "", "cart_redirect_after_add": "no" };
-        /* ]]> */
-    </script>
-    <script type="text/javascript" src="js/add-to-cart.min.js" id="wc-add-to-cart-js" defer="defer" data-wp-strategy="defer"></script>
-    <script type="text/javascript" src="js/js.cookie.min.js" id="js-cookie-js" data-wp-strategy="defer"></script>
+    <link rel="stylesheet" id="wpshare247.com_aio_ct_button.css-css" href="@Url.Content("~/css/aio_ct_button.css")" type="text/css" media="all" />
+<link rel="stylesheet" id="wpshare247.com_font-awesome-5.6.1_css-css" href="@Url.Content("~/css/all.min.css")" type="text/css" media="all" />
+<link rel="stylesheet" id="contact-form-7-css" href="@Url.Content("~/css/styles.css")" type="text/css" media="all" />
+<link rel="stylesheet" id="fa5-css" href="@Url.Content("~/css/all.css")" type="text/css" media="all" />
+<link rel="stylesheet" id="fa5-v4-shims-css" href="@Url.Content("~/css/v4-shims.css")" type="text/css" media="all" />
+<link rel="stylesheet" id="aio-tools-css" href="@Url.Content("~/css/aio-tools-public.css")" type="text/css" media="all" />
+<style id="woocommerce-inline-inline-css" type="text/css">
+    .woocommerce form .form-row .required {
+        visibility: visible;
+    }
+</style>
+<link rel="stylesheet" id="font-awesome-official-css" href="@Url.Content("~/css/all_1.css")" type="text/css" media="all" crossorigin="anonymous" />
+<link rel="stylesheet" id="srpw-style-css" href="@Url.Content("~/css/srpw-frontend.css")" type="text/css" media="all" />
+<link rel="stylesheet" id="flatsome-main-css" href="@Url.Content("~/css/flatsome.css")" type="text/css" media="all" />
+<style id="flatsome-main-inline-css" type="text/css">
+    @@font-face {
+        font-family: "fl-icons";
+        font-display: block;
+        src: url('@Url.Content("~/fonts/fl-icons_1.eot")');
+        src: url('@Url.Content("~/fonts/fl-icons.eot#iefix?v=3.18.1")') format("embedded-opentype"),
+             url('@Url.Content("~/fonts/fl-icons.woff2")') format("woff2"),
+             url('@Url.Content("~/fonts/fl-icons.ttf")') format("truetype"),
+             url('@Url.Content("~/fonts/fl-icons.woff")') format("woff"),
+             url('@Url.Content("~/images/fl-icons.svg#fl-icons")') format("svg");
+    }
+</style>
+<link rel="stylesheet" id="flatsome-shop-css" href="@Url.Content("~/css/flatsome-shop.css")" type="text/css" media="all" />
+<link rel="stylesheet" id="flatsome-style-css" href="@Url.Content("~/css/style.css")" type="text/css" media="all" />
+<link rel="stylesheet" id="flatsome-googlefonts-css" href="//fonts.googleapis.com/css?family=Roboto%3Aregular%2C700%2Cregular%2Cregular%2Cregular&display=swap&ver=3.9" type="text/css" media="all" />
+<link rel="stylesheet" id="font-awesome-official-v4shim-css" href="@Url.Content("~/css/v4-shims_1.css")" type="text/css" media="all" crossorigin="anonymous" />
+    <script type="text/javascript" asp-append-version="true" src="@Url.Content("~/js/jquery.min.js")" id="jquery-core-js"></script>
+    <script type="text/javascript" asp-append-version="true" src="@Url.Content("~/js/jquery-migrate.min.js")" id="jquery-migrate-js"></script>
+    <script type="text/javascript" asp-append-version="true" src="@Url.Content("~/js/aio-tools-public.js")" id="aio-tools-js"></script>
+    <script type="text/javascript" asp-append-version="true" src="@Url.Content("~/js/jquery.blockUI.min.js")" id="jquery-blockui-js" data-wp-strategy="defer"></script>
+    <script type="text/javascript" asp-append-version="true" id="wc-add-to-cart-js-extra">
+    /* <![CDATA[ */
+    var wc_add_to_cart_params = { "ajax_url": "/wp-admin/admin-ajax.php", "wc_ajax_url": "/?wc-ajax=%%endpoint%%", "i18n_view_cart": "Xem giỏ hàng", "cart_url": "https://xuonggiayvesinh.net/gio-hang/", "is_cart": "", "cart_redirect_after_add": "no" };
+    /* ]]> */
+</script>
+    <script type="text/javascript" asp-append-version="true" src="@Url.Content("~/js/add-to-cart.min.js")" id="wc-add-to-cart-js" defer="defer" data-wp-strategy="defer"></script>
+    <script type="text/javascript" asp-append-version="true" src="@Url.Content("~/js/js.cookie.min.js")" id="js-cookie-js" data-wp-strategy="defer"></script>
+
     <meta name="generator" content="WordPress 6.4.5">
     <style>
         .bg {
@@ -302,9 +307,9 @@
                 opacity: 1 !important;
             }</style>
     </noscript>
-    <link rel="icon" href="images/cropped-Logo-Giayvesinh-32x32.png" sizes="32x32">
-    <link rel="icon" href="images/cropped-Logo-Giayvesinh-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" href="images/cropped-Logo-Giayvesinh-180x180.png">
+    <link rel="icon" href="@Url.Content("~/images/cropped-Logo-Giayvesinh-32x32.png")" sizes="32x32" />
+    <link rel="icon" href="@Url.Content("~/images/cropped-Logo-Giayvesinh-192x192.png")" sizes="192x192" />
+    <link rel="apple-touch-icon" href="@Url.Content("~/images/cropped-Logo-Giayvesinh-180x180.png")" />
     <style id="custom-css" type="text/css">
         :root {
             --primary-color: #087c37;
@@ -532,7 +537,7 @@
         .label-popular.menu-item > a:after {
             content: "Popular";
         }</style>
-    <script src="js/wp-emoji-release.min.js" defer=""></script>
+    <script src="~/js/wp-emoji-release.min.js" defer=""></script>
 </head>
 <body>
      <header id="header" class="header has-sticky sticky-jump">
@@ -544,7 +549,7 @@
                         <div id="logo" class="flex-col logo">
                             <!-- Header logo -->
                             <a href="#" title="Hazelnut" rel="home">
-                                <img width="1920" height="442" src="images/HazelnutLogo-nobackground.png" class="header_logo header-logo" alt="Công Ty TNHH Thế Giới Giấy"><img width="1920" height="442" src="images/Logo-Giayvesinh.png" class="header-logo-dark" alt="Công Ty TNHH Thế Giới Giấy">
+                            <img width="1920" height="442" src="~/images/HazelnutLogo-nobackground.png" class="header_logo header-logo" alt="Hazelntut"><img width="1920" height="442" src="~/images/Logo-Giayvesinh.png" class="header-logo-dark" alt="Hazelnut">
                             </a>
                         </div>
 
@@ -566,12 +571,11 @@
                                 <li class="header-search-form search-form html relative has-icon">
                                     <div class="header-search-form-wrapper">
                                         <div class="searchform-wrapper ux-search-box relative is-normal">
-                                            <form role="search" method="get" class="searchform" action="https://xuonggiayvesinh.net/">
+                                            <form role="search" method="get" class="searchform" asp-action="Search" asp-controller="Product">
                                                 <div class="flex-row relative">
                                                     <div class="flex-col flex-grow">
                                                         <label class="screen-reader-text" for="woocommerce-product-search-field-0">Tìm kiếm:</label>
-                                                        <input type="search" id="woocommerce-product-search-field-0" class="search-field mb-0" placeholder="Nhập từ khóa cần tìm..." value="" name="s">
-                                                        <input type="hidden" name="post_type" value="product">
+                                                        <input type="search" id="woocommerce-product-search-field-0" class="search-field mb-0" placeholder="Nhập từ khóa cần tìm..." value="" name="name">
                                                     </div>
                                                     <div class="flex-col">
                                                         <button type="submit" value="Tìm kiếm" class="ux-search-submit submit-button secondary button  icon mb-0" aria-label="Submit">
@@ -625,12 +629,11 @@
 
                                     <div id="search-lightbox" class="mfp-hide dark text-center">
                                         <div class="searchform-wrapper ux-search-box relative is-large">
-                                            <form role="search" method="get" class="searchform" action="https://xuonggiayvesinh.net/">
+                                        <form role="search" method="get" class="searchform" asp-action="Search" asp-controller="Product">
                                                 <div class="flex-row relative">
                                                     <div class="flex-col flex-grow">
                                                         <label class="screen-reader-text" for="woocommerce-product-search-field-1">Tìm kiếm:</label>
-                                                        <input type="search" id="woocommerce-product-search-field-1" class="search-field mb-0" placeholder="Nhập từ khóa cần tìm..." value="" name="s">
-                                                        <input type="hidden" name="post_type" value="product">
+                                                        <input type="search" id="woocommerce-product-search-field-1" class="search-field mb-0" placeholder="Nhập từ khóa cần tìm..." value="" name="name">
                                                     </div>
                                                     <div class="flex-col">
                                                         <button type="submit" value="Tìm kiếm" class="ux-search-submit submit-button secondary button icon mb-0" aria-label="Submit">
