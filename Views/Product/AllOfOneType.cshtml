@@ -15,12 +15,6 @@
 			<nav class="woocommerce-breadcrumb breadcrumbs uppercase"><a href="@Url.Action("Index", "Home")">Trang chủ</a> <span class="divider">/</span> <a href="#">Sản phẩm</a> <span class="divider">/</span> @Model.ProductTypeVietnamese</nav>
 		</div>
 <div class="category-filtering category-filter-row show-for-medium">
-	<a href="#" data-open="#shop-sidebar" data-visible-after="true" data-pos="left" class="filter-button uppercase plain">
-		<i class="icon-equalizer"></i>
-		<strong>Lọc</strong>
-	</a>
-	<div class="inline-block">
-			</div>
 </div>
 	  </div>
 	  <div class="flex-col medium-text-center">
@@ -99,34 +93,95 @@
 				<div class="col large-9">
 					<div class="shop-container">
 						<div class="woocommerce-notices-wrapper"></div>
+						<div class="add-product-button text-right mb-3">
+							<a href="@Url.Action("Create", "Product")" class="button primary">
+								<i class="fas fa-plus-circle"></i> Thêm Sản Phẩm
+							</a>
+						</div>
+
 						<div class="products row row-small large-columns-3 medium-columns-2 small-columns-2 has-shadow row-box-shadow-1 row-box-shadow-2-hover has-equal-box-heights equalize-box">
 							@foreach (var item in Model.Products)
 							{
 								<div class="product-small col has-hover product type-product post-1075 status-publish instock shipping-taxable product-type-simple">
 									<div class="col-inner">
-										<div class="badge-container absolute left top z-1"></div>
-										<div class="product-small box ">
+										<div class="product-small box position-relative">
+
+											<!-- Edit & Delete Icons -->
+											<div class="product-icon-actions position-absolute top-0 end-0 m-2 z-3">
+												<a href="@Url.Action("Edit", "Product", new { productId = item.ProductId, productType = Model.ProductType })"
+												   class="text-primary me-2" title="Edit">
+													<i class="fas fa-edit"></i>
+												</a>
+												<form asp-action="Delete" asp-controller="Product" method="post" class="d-inline">
+													<input type="hidden" name="productId" value="@item.ProductId" />
+													<input type="hidden" name="productType" value="@Model.ProductType" />
+													<button type="submit" class="btn btn-link text-danger p-0" title="Delete"
+															onclick="return confirm('Xóa sản phẩm này?');">
+														<i class="fas fa-trash-alt"></i>
+													</button>
+												</form>
+											</div>
+
+											<!-- Product Image -->
 											<div class="box-image">
 												<div class="image-zoom">
-													<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, Views_Product_AllOfOneType = Model.ProductType })" aria-label="@item.Name">
-														<img width="394" height="313" src="~/@item.ImagePath" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" fetchpriority="high">
+													<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = Model.ProductType })"
+													   aria-label="@item.Name">
+														<img width="394" height="313" src="~/@item.ImagePath"
+															 class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" fetchpriority="high">
 													</a>
 												</div>
 											</div>
+
+											<!-- Product Name -->
 											<div class="box-text box-text-products text-center grid-style-2">
 												<div class="title-wrapper">
 													<p class="name product-title woocommerce-loop-product__title">
-														<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, Views_Product_AllOfOneType = Model.ProductType })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
+														<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = Model.ProductType })"
+														   class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
 													</p>
 												</div>
 											</div>
-										</div>
-										<div class="nut-mua-ngay">
-											<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, Views_Product_AllOfOneType = Model.ProductType })">Đặt hàng ngay</a>
+
+											<!-- Order Now -->
+											<div class="nut-mua-ngay">
+												<a href="@Url.Action("Index", "Product", new { model = Model })">
+													Đặt hàng ngay
+												</a>
+											</div>
+
 										</div>
 									</div>
 								</div>
 							}
+
+							<style>
+								.product-icon-actions {
+									position: absolute;
+									top: 8px;
+									right: 8px;
+									z-index: 10;
+								}
+
+									.product-icon-actions a,
+									.product-icon-actions button {
+										color: #333;
+										font-size: 16px;
+										background: white;
+										border-radius: 50%;
+										padding: 5px;
+										margin: 2px;
+										border: none;
+										box-shadow: 0 0 3px rgba(0,0,0,0.1);
+										transition: background 0.3s;
+									}
+
+										.product-icon-actions a:hover,
+										.product-icon-actions button:hover {
+											background: #f0f0f0;
+											color: #007bff;
+										}
+							</style>
 						</div><!-- row -->
 						<!-- Pagination -->@* 
 						<div class="pagination text-center" style="margin-top: 30px;">
@@ -228,8 +283,6 @@
 </div>
 
 <div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
-
-	
 	<div class="sidebar-menu no-scrollbar ">
 
 		

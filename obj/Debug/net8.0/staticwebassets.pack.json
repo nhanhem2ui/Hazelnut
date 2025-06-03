@@ -249,38 +249,6 @@
       "PackagePath": "staticwebassets\\images\\5.jpg"
     },
     {
-      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\BANNER-GIAY-VS-01-1536x640.jpg",
-      "PackagePath": "staticwebassets\\images\\BANNER-GIAY-VS-01-1536x640.jpg"
-    },
-    {
-      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\BANNER-GIAY-VS-01-600x250.jpg",
-      "PackagePath": "staticwebassets\\images\\BANNER-GIAY-VS-01-600x250.jpg"
-    },
-    {
-      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\BANNER-GIAY-VS-01-768x320.jpg",
-      "PackagePath": "staticwebassets\\images\\BANNER-GIAY-VS-01-768x320.jpg"
-    },
-    {
-      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\BANNER-GIAY-VS-01.jpg",
-      "PackagePath": "staticwebassets\\images\\BANNER-GIAY-VS-01.jpg"
-    },
-    {
-      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\BANNER-GIAY-VS-02-1536x640.jpg",
-      "PackagePath": "staticwebassets\\images\\BANNER-GIAY-VS-02-1536x640.jpg"
-    },
-    {
-      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\BANNER-GIAY-VS-02-600x250.jpg",
-      "PackagePath": "staticwebassets\\images\\BANNER-GIAY-VS-02-600x250.jpg"
-    },
-    {
-      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\BANNER-GIAY-VS-02-768x320.jpg",
-      "PackagePath": "staticwebassets\\images\\BANNER-GIAY-VS-02-768x320.jpg"
-    },
-    {
-      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\BANNER-GIAY-VS-02.jpg",
-      "PackagePath": "staticwebassets\\images\\BANNER-GIAY-VS-02.jpg"
-    },
-    {
       "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\ChatGPT Image 14_12_56 12 thg 5, 2025.png",
       "PackagePath": "staticwebassets\\images\\ChatGPT Image 14_12_56 12 thg 5, 2025.png"
     },
@@ -291,10 +259,6 @@
     {
       "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\HazelnutLogo.png",
       "PackagePath": "staticwebassets\\images\\HazelnutLogo.png"
-    },
-    {
-      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Logo-Giayvesinh.png",
-      "PackagePath": "staticwebassets\\images\\Logo-Giayvesinh.png"
     },
     {
       "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Picture1-400x334.png",
@@ -401,6 +365,10 @@
       "PackagePath": "staticwebassets\\images\\Picture9.png"
     },
     {
+      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\Screenshot 2024-07-30 144545.png",
+      "PackagePath": "staticwebassets\\images\\Screenshot 2024-07-30 144545.png"
+    },
+    {
       "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\background.png",
       "PackagePath": "staticwebassets\\images\\background.png"
     },
@@ -423,14 +391,6 @@
     {
       "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\default-skin.svg",
       "PackagePath": "staticwebassets\\images\\default-skin.svg"
-    },
-    {
-      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\doi-tra-hang-hoa-100x100.jpg",
-      "PackagePath": "staticwebassets\\images\\doi-tra-hang-hoa-100x100.jpg"
-    },
-    {
-      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\doi-tra-hang-hoa.jpg",
-      "PackagePath": "staticwebassets\\images\\doi-tra-hang-hoa.jpg"
     },
     {
       "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\fa-brands-400.svg",
@@ -491,26 +451,6 @@
     {
       "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\underline.png",
       "PackagePath": "staticwebassets\\images\\underline.png"
-    },
-    {
-      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\z4223671426793_dd339a0c1e408572a78adeacdf46d47a.jpg",
-      "PackagePath": "staticwebassets\\images\\z4223671426793_dd339a0c1e408572a78adeacdf46d47a.jpg"
-    },
-    {
-      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\z5179926814644_b066cc8303f541051bac93c80e822913-100x100.jpg",
-      "PackagePath": "staticwebassets\\images\\z5179926814644_b066cc8303f541051bac93c80e822913-100x100.jpg"
-    },
-    {
-      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\z5179926814644_b066cc8303f541051bac93c80e822913-400x400.jpg",
-      "PackagePath": "staticwebassets\\images\\z5179926814644_b066cc8303f541051bac93c80e822913-400x400.jpg"
-    },
-    {
-      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\z5179926814644_b066cc8303f541051bac93c80e822913-600x600.jpg",
-      "PackagePath": "staticwebassets\\images\\z5179926814644_b066cc8303f541051bac93c80e822913-600x600.jpg"
-    },
-    {
-      "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\z5179926814644_b066cc8303f541051bac93c80e822913.jpg",
-      "PackagePath": "staticwebassets\\images\\z5179926814644_b066cc8303f541051bac93c80e822913.jpg"
     },
     {
       "Id": "E:\\Dotnet\\Hazelnut\\wwwroot\\images\\z5255358988534_98b367936326f5a09e07f0a4dc40dcc9.jpg",

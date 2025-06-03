@@ -9,7 +9,7 @@ namespace Hazelnut.Controllers
 	public class HomeController : Controller
 	{
 		private readonly AppDbContext appDbContext;
-		public HomeController( AppDbContext appDbContext)
+		public HomeController(AppDbContext appDbContext)
 		{
 			this.appDbContext = appDbContext;
 		}
@@ -89,11 +89,6 @@ namespace Hazelnut.Controllers
 
 			return View(indexViewModel);
 		}
-
-		//public IActionResult Privacy()
-		//{
-		//	return View();
-		//}
 
 		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
 		public IActionResult Error()
