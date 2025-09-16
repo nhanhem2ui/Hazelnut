@@ -1,0 +1,754 @@
+﻿@{
+	ViewData["Title"] = "Search";
+	Layout = "_Layout";
+}
+@model Hazelnut.Models.ViewModels.SeachViewModel
+
+<body class="archive tax-product_cat term-hop-dung-giay-cuon-lon term-98 theme-flatsome woocommerce woocommerce-page woocommerce-js header-shadow lightbox nav-dropdown-has-arrow nav-dropdown-has-shadow nav-dropdown-has-border catalog-mode">
+
+	<div id="wrapper">
+
+		<div class="shop-page-title category-page-title page-title ">
+			<div class="page-title-inner flex-row  medium-flex-wrap container">
+				<div class="flex-col flex-grow medium-text-center">
+					<div class="is-medium">
+						<nav class="woocommerce-breadcrumb breadcrumbs uppercase"><a href="@Url.Action("Index", "Home")">Trang chủ</a> <span class="divider">/</span> <a href="#">Sản phẩm</a></nav>
+					</div>
+					<div class="category-filtering category-filter-row show-for-medium">
+						<a href="#" data-open="#shop-sidebar" data-visible-after="true" data-pos="left" class="filter-button uppercase plain">
+							<i class="icon-equalizer"></i>
+							<strong>Lọc</strong>
+						</a>
+						<div class="inline-block">
+						</div>
+					</div>
+				</div>
+				<div class="flex-col medium-text-center">
+					<p class="woocommerce-result-count hide-for-medium">
+						Hiển thị tất cả @Model.TotalProduct kết quả
+					</p>
+
+					@* <form class="woocommerce-ordering" method="get">
+					<select name="orderby" class="orderby" aria-label="Đơn hàng của cửa hàng">
+					<option value="popularity">Thứ tự theo mức độ phổ biến</option>
+					<option value="rating">Thứ tự theo điểm đánh giá</option>
+					<option value="date" selected="selected">Mới nhất</option>
+					<option value="price">Thứ tự theo giá: thấp đến cao</option>
+					<option value="price-desc">Thứ tự theo giá: cao xuống thấp</option>
+					</select>
+					<input type="hidden" name="paged" value="1">
+					</form> *@
+
+				</div>
+			</div>
+		</div>
+
+		<main id="main" class="">
+			<div class="row category-page-row">
+
+				<div class="col large-3 hide-for-medium ">
+					<div class="is-sticky-column" data-sticky-mode="javascript">
+						<div class="is-sticky-column__inner">
+							<div id="shop-sidebar" class="sidebar-inner col-inner">
+								<aside id="woocommerce_product_categories-3" class="widget woocommerce widget_product_categories">
+									<span class="widget-title shop-sidebar">Danh mục sản phẩm</span>
+									<div class="is-divider small"></div>
+									<ul class="product-categories">
+										<li class="cat-item cat-item-96">
+											<a href="@Url.Action("AllOfOneType", "Product", new { productType = "Napkin" })">Giấy Ăn</a>
+										</li>
+										<li class="cat-item cat-item-97">
+											<a href="@Url.Action("AllOfOneType", "Product", new { productType = "Hankerchief" })">Giấy Lau Tay</a>
+										</li>
+										<li class="cat-item cat-item-15">
+											<a href="@Url.Action("AllOfOneType", "Product", new { productType = "ToiletPaper" })">Giấy Vệ Sinh Cuộn Lớn</a>
+										</li>
+										<li class="cat-item cat-item-95">
+											<a href="@Url.Action("AllOfOneType", "Product", new { productType = "SmallToiletPaper" })">Giấy Vệ Sinh Cuộn Nhỏ</a>
+										</li>
+										<li class="cat-item cat-item-98">
+											<a href="@Url.Action("AllOfOneType", "Product", new { productType = "PaperContainer" })">Hộp Đựng Giấy Cuộn Lớn</a>
+										</li>
+									</ul>
+								</aside>
+
+								<aside id="flatsome_recent_posts-2" class="widget flatsome_recent_posts">
+									@* <span class="widget-title shop-sidebar">Tin tức mới</span><div class="is-divider small"></div> *@
+									@* <ul>
+
+
+									<li class="recent-blog-posts-li">
+									<div class="flex-row recent-blog-posts align-top pt-half pb-half">
+									<div class="flex-col mr-half">
+									<div class="badge post-date  badge-circle-inside">
+									<div class="badge-inner bg-fill" style="background: url(images/Picture9.png); border:0;">
+									</div>
+									</div>
+									</div>
+									<div class="flex-col flex-grow">
+									<a href="#" title="Hộp Đựng Giấy Vệ Sinh Nhựa và Inox">Hộp Đựng Giấy Vệ Sinh Nhựa và Inox</a>
+									<span class="post_comments op-7 block is-xsmall"><span>Chức năng bình luận bị tắt<span class="screen-reader-text"> ở Hộp Đựng Giấy Vệ Sinh Nhựa và Inox</span></span></span>
+									</div>
+									</div>
+									</li>
+
+									</ul> *@
+								</aside>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col large-9">
+					<div class="shop-container">
+						<div class="woocommerce-notices-wrapper"></div>
+						<div class="products row row-small large-columns-3 medium-columns-2 small-columns-2 has-shadow row-box-shadow-1 row-box-shadow-2-hover has-equal-box-heights equalize-box">
+							@foreach (var item in Model.ToiletPapers)
+							{
+								<div class="product-small col has-hover product type-product post-1075 status-publish instock shipping-taxable product-type-simple">
+									<div class="col-inner">
+										<div class="badge-container absolute left top z-1"></div>
+										<div class="product-small box ">
+											<div class="box-image">
+												<div class="image-zoom">
+													<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = "ToiletPaper" })" aria-label="@item.Name">
+														<img width="394" height="313" src="~/@item.ImagePath" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" fetchpriority="high">
+													</a>
+												</div>
+											</div>
+											<div class="box-text box-text-products text-center grid-style-2">
+												<div class="title-wrapper">
+													<p class="name product-title woocommerce-loop-product__title">
+														<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = "ToiletPaper" })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="nut-mua-ngay">
+											<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = "ToiletPaper" })">Đặt hàng ngay</a>
+										</div>
+									</div>
+								</div>
+							}
+							@foreach (var item in Model.SmallToiletPapers)
+							{
+								<div class="product-small col has-hover product type-product post-1075 status-publish instock shipping-taxable product-type-simple">
+									<div class="col-inner">
+										<div class="badge-container absolute left top z-1"></div>
+										<div class="product-small box ">
+											<div class="box-image">
+												<div class="image-zoom">
+													<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = "SmallToiletPaper" })" aria-label="@item.Name">
+														<img width="394" height="313" src="~/@item.ImagePath" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" fetchpriority="high">
+													</a>
+												</div>
+											</div>
+											<div class="box-text box-text-products text-center grid-style-2">
+												<div class="title-wrapper">
+													<p class="name product-title woocommerce-loop-product__title">
+														<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = "SmallToiletPaper" })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="nut-mua-ngay">
+											<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = "SmallToiletPaper" })">Đặt hàng ngay</a>
+										</div>
+									</div>
+								</div>
+							}
+							@foreach (var item in Model.Napkins)
+							{
+								<div class="product-small col has-hover product type-product post-1075 status-publish instock shipping-taxable product-type-simple">
+									<div class="col-inner">
+										<div class="badge-container absolute left top z-1"></div>
+										<div class="product-small box ">
+											<div class="box-image">
+												<div class="image-zoom">
+													<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = "Napkin" })" aria-label="@item.Name">
+														<img width="394" height="313" src="~/@item.ImagePath" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" fetchpriority="high">
+													</a>
+												</div>
+											</div>
+											<div class="box-text box-text-products text-center grid-style-2">
+												<div class="title-wrapper">
+													<p class="name product-title woocommerce-loop-product__title">
+														<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = "Napkin" })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="nut-mua-ngay">
+											<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = "Napkin" })">Đặt hàng ngay</a>
+										</div>
+									</div>
+								</div>
+							}
+							@foreach (var item in Model.PaperHandkerchiefs)
+							{
+								<div class="product-small col has-hover product type-product post-1075 status-publish instock shipping-taxable product-type-simple">
+									<div class="col-inner">
+										<div class="badge-container absolute left top z-1"></div>
+										<div class="product-small box ">
+											<div class="box-image">
+												<div class="image-zoom">
+													<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = "Hankerchief" })" aria-label="@item.Name">
+														<img width="394" height="313" src="~/@item.ImagePath" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" fetchpriority="high">
+													</a>
+												</div>
+											</div>
+											<div class="box-text box-text-products text-center grid-style-2">
+												<div class="title-wrapper">
+													<p class="name product-title woocommerce-loop-product__title">
+														<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, VproductType = "Hankerchief" })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="nut-mua-ngay">
+											<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = "Hankerchief" })">Đặt hàng ngay</a>
+										</div>
+									</div>
+								</div>
+							}
+							@foreach (var item in Model.PaperContainers)
+							{
+								<div class="product-small col has-hover product type-product post-1075 status-publish instock shipping-taxable product-type-simple">
+									<div class="col-inner">
+										<div class="badge-container absolute left top z-1"></div>
+										<div class="product-small box ">
+											<div class="box-image">
+												<div class="image-zoom">
+													<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = "PaperContainer"  })" aria-label="@item.Name">
+														<img width="394" height="313" src="~/@item.ImagePath" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" fetchpriority="high">
+													</a>
+												</div>
+											</div>
+											<div class="box-text box-text-products text-center grid-style-2">
+												<div class="title-wrapper">
+													<p class="name product-title woocommerce-loop-product__title">
+														<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = "PaperContainer"  })" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">@item.Name</a>
+													</p>
+												</div>
+											</div>
+										</div>
+										<div class="nut-mua-ngay">
+											<a href="@Url.Action("Index", "Product", new { productId = item.ProductId, productType = "PaperContainer"  })">Đặt hàng ngay</a>
+										</div>
+									</div>
+								</div>
+							}
+						</div><!-- row -->
+					@* 	<!-- Pagination -->
+						<div class="pagination text-center" style="margin-top: 30px;">
+							<ul class="pagination">
+								@if (Model.TotalPages > 1)
+								{
+									if (Model.CurrentPage > 1)
+									{
+										<li><a href="@Url.Action("Search", new { Name = Model.Name , page = Model.CurrentPage - 1 })">«</a></li>
+									}
+
+									for (int i = 1; i <= Model.TotalPages; i++)
+									{
+										if (i == Model.CurrentPage)
+										{
+											<li class="active"><span>@i</span></li>
+										}
+										else
+										{
+											<li><a href="@Url.Action("Search", new { Name = Model.Name, page = i })">@i</a></li>
+										}
+									}
+
+									if (Model.CurrentPage < Model.TotalPages)
+									{
+										<li><a href="@Url.Action("Search", new { Name = Model.Name, page = Model.CurrentPage + 1 })">»</a></li>
+									}
+								}
+							</ul>
+						</div>
+						<!-- End Pagination --> *@
+					</div><!-- shop container -->
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
+
+
+		<div class="sidebar-menu no-scrollbar ">
+
+
+			<ul class="nav nav-sidebar nav-vertical nav-uppercase" data-tab="1">
+				<li class="header-search-form search-form html relative has-icon">
+					<div class="header-search-form-wrapper">
+						<div class="searchform-wrapper ux-search-box relative is-normal">
+							<form role="search" method="get" class="searchform" action="https://xuonggiayvesinh.net/">
+								<div class="flex-row relative">
+									<div class="flex-col flex-grow">
+										<label class="screen-reader-text" for="woocommerce-product-search-field-2">Tìm kiếm:</label>
+										<input type="search" id="woocommerce-product-search-field-2" class="search-field mb-0" placeholder="Nhập từ khóa cần tìm..." value="" name="s">
+										<input type="hidden" name="post_type" value="product">
+									</div>
+									<div class="flex-col">
+										<button type="submit" value="Tìm kiếm" class="ux-search-submit submit-button secondary button  icon mb-0" aria-label="Submit">
+											<i class="icon-search"></i>
+										</button>
+									</div>
+								</div>
+								<div class="live-search-results text-left z-top"></div>
+							</form>
+						</div>
+					</div>
+				</li>
+				<li class="menu-item current"><a href="@Url.Action("Index", "Home")">Trang chủ</a></li>
+				<li class="menu-item"><a href="#">Giới thiệu</a></li>
+				<li id="menu-item-565" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-565 menu-item-design-default"><a href="#" class="nav-top-link">Giới thiệu</a></li>
+				<li id="menu-item-541" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-541 menu-item-design-default"><a href="@Url.Action("AllOfOneType", "Product", new { productType = "ToiletPaper"})" class="nav-top-link">Giấy Vệ Sinh Cuộn Lớn</a></li>
+				<li id="menu-item-1038" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1038 menu-item-design-default"><a href="@Url.Action("AllOfOneType", "Product", new { productType = "Napkin"})" class="nav-top-link">Giấy Ăn</a></li>
+				<li id="menu-item-1039" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1039 menu-item-design-default"><a href="@Url.Action("AllOfOneType", "Product", new { productType = "Hankerchief"})" class="nav-top-link">Giấy Lau Tay</a></li>
+				<li id="menu-item-1040" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1040 menu-item-design-default"><a href="@Url.Action("AllOfOneType", "Product", new { productType = "SmallToiletPaper"})" class="nav-top-link">Giấy Vệ Sinh Cuộn Nhỏ</a></li>
+				<li id="menu-item-1041" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-1041 menu-item-design-default"><a href="@Url.Action("AllOfOneType", "Product", new { productType = "PaperContainer"})" class="nav-top-link">Hộp Đựng Giấy Cuộn Lớn</a></li>
+				<li class="menu-item"><a href="#">Khuyến mãi</a></li>
+				<li class="menu-item"><a href="#">Tin tức</a></li>
+				<li class="menu-item"><a href="#">Liên hệ</a></li>
+				<li class="html header-social-icons ml-0">
+
+		</div>
+
+		<style id="global-styles-inline-css" type="text/css">
+			body {
+				--wp--preset--color--black: #000000;
+				--wp--preset--color--cyan-bluish-gray: #abb8c3;
+				--wp--preset--color--white: #ffffff;
+				--wp--preset--color--pale-pink: #f78da7;
+				--wp--preset--color--vivid-red: #cf2e2e;
+				--wp--preset--color--luminous-vivid-orange: #ff6900;
+				--wp--preset--color--luminous-vivid-amber: #fcb900;
+				--wp--preset--color--light-green-cyan: #7bdcb5;
+				--wp--preset--color--vivid-green-cyan: #00d084;
+				--wp--preset--color--pale-cyan-blue: #8ed1fc;
+				--wp--preset--color--vivid-cyan-blue: #0693e3;
+				--wp--preset--color--vivid-purple: #9b51e0;
+				--wp--preset--color--primary: #087c37;
+				--wp--preset--color--secondary: #6ac358;
+				--wp--preset--color--success: #b3f031;
+				--wp--preset--color--alert: #b20000;
+				--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);
+				--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+				--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+				--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+				--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);
+				--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);
+				--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);
+				--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);
+				--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);
+				--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);
+				--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);
+				--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);
+				--wp--preset--font-size--small: 13px;
+				--wp--preset--font-size--medium: 20px;
+				--wp--preset--font-size--large: 36px;
+				--wp--preset--font-size--x-large: 42px;
+				--wp--preset--spacing--20: 0.44rem;
+				--wp--preset--spacing--30: 0.67rem;
+				--wp--preset--spacing--40: 1rem;
+				--wp--preset--spacing--50: 1.5rem;
+				--wp--preset--spacing--60: 2.25rem;
+				--wp--preset--spacing--70: 3.38rem;
+				--wp--preset--spacing--80: 5.06rem;
+				--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+				--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+				--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+				--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+				--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+			}
+
+			body {
+				margin: 0;
+			}
+
+			.wp-site-blocks > .alignleft {
+				float: left;
+				margin-right: 2em;
+			}
+
+			.wp-site-blocks > .alignright {
+				float: right;
+				margin-left: 2em;
+			}
+
+			.wp-site-blocks > .aligncenter {
+				justify-content: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			:where(.is-layout-flex) {
+				gap: 0.5em;
+			}
+
+			:where(.is-layout-grid) {
+				gap: 0.5em;
+			}
+
+			body .is-layout-flow > .alignleft {
+				float: left;
+				margin-inline-start: 0;
+				margin-inline-end: 2em;
+			}
+
+			body .is-layout-flow > .alignright {
+				float: right;
+				margin-inline-start: 2em;
+				margin-inline-end: 0;
+			}
+
+			body .is-layout-flow > .aligncenter {
+				margin-left: auto !important;
+				margin-right: auto !important;
+			}
+
+			body .is-layout-constrained > .alignleft {
+				float: left;
+				margin-inline-start: 0;
+				margin-inline-end: 2em;
+			}
+
+			body .is-layout-constrained > .alignright {
+				float: right;
+				margin-inline-start: 2em;
+				margin-inline-end: 0;
+			}
+
+			body .is-layout-constrained > .aligncenter {
+				margin-left: auto !important;
+				margin-right: auto !important;
+			}
+
+			body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+				max-width: var(--wp--style--global--content-size);
+				margin-left: auto !important;
+				margin-right: auto !important;
+			}
+
+			body .is-layout-constrained > .alignwide {
+				max-width: var(--wp--style--global--wide-size);
+			}
+
+			body .is-layout-flex {
+				display: flex;
+			}
+
+			body .is-layout-flex {
+				flex-wrap: wrap;
+				align-items: center;
+			}
+
+				body .is-layout-flex > * {
+					margin: 0;
+				}
+
+			body .is-layout-grid {
+				display: grid;
+			}
+
+				body .is-layout-grid > * {
+					margin: 0;
+				}
+
+			body {
+				padding-top: 0px;
+				padding-right: 0px;
+				padding-bottom: 0px;
+				padding-left: 0px;
+			}
+
+			a:where(:not(.wp-element-button)) {
+				text-decoration: none;
+			}
+
+			.wp-element-button, .wp-block-button__link {
+				background-color: #32373c;
+				border-width: 0;
+				color: #fff;
+				font-family: inherit;
+				font-size: inherit;
+				line-height: inherit;
+				padding: calc(0.667em + 2px) calc(1.333em + 2px);
+				text-decoration: none;
+			}
+
+			.has-black-color {
+				color: var(--wp--preset--color--black) !important;
+			}
+
+			.has-cyan-bluish-gray-color {
+				color: var(--wp--preset--color--cyan-bluish-gray) !important;
+			}
+
+			.has-white-color {
+				color: var(--wp--preset--color--white) !important;
+			}
+
+			.has-pale-pink-color {
+				color: var(--wp--preset--color--pale-pink) !important;
+			}
+
+			.has-vivid-red-color {
+				color: var(--wp--preset--color--vivid-red) !important;
+			}
+
+			.has-luminous-vivid-orange-color {
+				color: var(--wp--preset--color--luminous-vivid-orange) !important;
+			}
+
+			.has-luminous-vivid-amber-color {
+				color: var(--wp--preset--color--luminous-vivid-amber) !important;
+			}
+
+			.has-light-green-cyan-color {
+				color: var(--wp--preset--color--light-green-cyan) !important;
+			}
+
+			.has-vivid-green-cyan-color {
+				color: var(--wp--preset--color--vivid-green-cyan) !important;
+			}
+
+			.has-pale-cyan-blue-color {
+				color: var(--wp--preset--color--pale-cyan-blue) !important;
+			}
+
+			.has-vivid-cyan-blue-color {
+				color: var(--wp--preset--color--vivid-cyan-blue) !important;
+			}
+
+			.has-vivid-purple-color {
+				color: var(--wp--preset--color--vivid-purple) !important;
+			}
+
+			.has-primary-color {
+				color: var(--wp--preset--color--primary) !important;
+			}
+
+			.has-secondary-color {
+				color: var(--wp--preset--color--secondary) !important;
+			}
+
+			.has-success-color {
+				color: var(--wp--preset--color--success) !important;
+			}
+
+			.has-alert-color {
+				color: var(--wp--preset--color--alert) !important;
+			}
+
+			.has-black-background-color {
+				background-color: var(--wp--preset--color--black) !important;
+			}
+
+			.has-cyan-bluish-gray-background-color {
+				background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+			}
+
+			.has-white-background-color {
+				background-color: var(--wp--preset--color--white) !important;
+			}
+
+			.has-pale-pink-background-color {
+				background-color: var(--wp--preset--color--pale-pink) !important;
+			}
+
+			.has-vivid-red-background-color {
+				background-color: var(--wp--preset--color--vivid-red) !important;
+			}
+
+			.has-luminous-vivid-orange-background-color {
+				background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+			}
+
+			.has-luminous-vivid-amber-background-color {
+				background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+			}
+
+			.has-light-green-cyan-background-color {
+				background-color: var(--wp--preset--color--light-green-cyan) !important;
+			}
+
+			.has-vivid-green-cyan-background-color {
+				background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+			}
+
+			.has-pale-cyan-blue-background-color {
+				background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+			}
+
+			.has-vivid-cyan-blue-background-color {
+				background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+			}
+
+			.has-vivid-purple-background-color {
+				background-color: var(--wp--preset--color--vivid-purple) !important;
+			}
+
+			.has-primary-background-color {
+				background-color: var(--wp--preset--color--primary) !important;
+			}
+
+			.has-secondary-background-color {
+				background-color: var(--wp--preset--color--secondary) !important;
+			}
+
+			.has-success-background-color {
+				background-color: var(--wp--preset--color--success) !important;
+			}
+
+			.has-alert-background-color {
+				background-color: var(--wp--preset--color--alert) !important;
+			}
+
+			.has-black-border-color {
+				border-color: var(--wp--preset--color--black) !important;
+			}
+
+			.has-cyan-bluish-gray-border-color {
+				border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+			}
+
+			.has-white-border-color {
+				border-color: var(--wp--preset--color--white) !important;
+			}
+
+			.has-pale-pink-border-color {
+				border-color: var(--wp--preset--color--pale-pink) !important;
+			}
+
+			.has-vivid-red-border-color {
+				border-color: var(--wp--preset--color--vivid-red) !important;
+			}
+
+			.has-luminous-vivid-orange-border-color {
+				border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+			}
+
+			.has-luminous-vivid-amber-border-color {
+				border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+			}
+
+			.has-light-green-cyan-border-color {
+				border-color: var(--wp--preset--color--light-green-cyan) !important;
+			}
+
+			.has-vivid-green-cyan-border-color {
+				border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+			}
+
+			.has-pale-cyan-blue-border-color {
+				border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+			}
+
+			.has-vivid-cyan-blue-border-color {
+				border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+			}
+
+			.has-vivid-purple-border-color {
+				border-color: var(--wp--preset--color--vivid-purple) !important;
+			}
+
+			.has-primary-border-color {
+				border-color: var(--wp--preset--color--primary) !important;
+			}
+
+			.has-secondary-border-color {
+				border-color: var(--wp--preset--color--secondary) !important;
+			}
+
+			.has-success-border-color {
+				border-color: var(--wp--preset--color--success) !important;
+			}
+
+			.has-alert-border-color {
+				border-color: var(--wp--preset--color--alert) !important;
+			}
+
+			.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+				background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+			}
+
+			.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+				background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+			}
+
+			.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+				background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+			}
+
+			.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+				background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+			}
+
+			.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+				background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+			}
+
+			.has-cool-to-warm-spectrum-gradient-background {
+				background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+			}
+
+			.has-blush-light-purple-gradient-background {
+				background: var(--wp--preset--gradient--blush-light-purple) !important;
+			}
+
+			.has-blush-bordeaux-gradient-background {
+				background: var(--wp--preset--gradient--blush-bordeaux) !important;
+			}
+
+			.has-luminous-dusk-gradient-background {
+				background: var(--wp--preset--gradient--luminous-dusk) !important;
+			}
+
+			.has-pale-ocean-gradient-background {
+				background: var(--wp--preset--gradient--pale-ocean) !important;
+			}
+
+			.has-electric-grass-gradient-background {
+				background: var(--wp--preset--gradient--electric-grass) !important;
+			}
+
+			.has-midnight-gradient-background {
+				background: var(--wp--preset--gradient--midnight) !important;
+			}
+
+			.has-small-font-size {
+				font-size: var(--wp--preset--font-size--small) !important;
+			}
+
+			.has-medium-font-size {
+				font-size: var(--wp--preset--font-size--medium) !important;
+			}
+
+			.has-large-font-size {
+				font-size: var(--wp--preset--font-size--large) !important;
+			}
+
+			.has-x-large-font-size {
+				font-size: var(--wp--preset--font-size--x-large) !important;
+			}
+		</style>
+		<script type="text/javascript" src="~/js/index.js" id="swv-js"></script>
+		<script type="text/javascript" src="~/js/index_1.js" id="contact-form-7-js"></script>
+		<script type="text/javascript" id="woocommerce-js-extra">
+			/* <![CDATA[ */
+			var woocommerce_params = { "ajax_url": "\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/?wc-ajax=%%endpoint%%" };
+			/* ]]> */
+		</script>
+		<script type="text/javascript" src="~/js/woocommerce.min.js" id="woocommerce-js" data-wp-strategy="defer"></script>
+		<script type="text/javascript" src="~/js/sourcebuster.min.js" id="sourcebuster-js-js"></script>
+		<script type="text/javascript" src="~/js/order-attribution.min.js" id="wc-order-attribution-js"></script>
+		<script type="text/javascript" src="~/js/flatsome-live-search.js" id="flatsome-live-search-js"></script>
+		<script type="text/javascript" src="~/js/hoverIntent.min.js" id="hoverIntent-js"></script>
+		<script type="text/javascript" src="~/js/flatsome.js" id="flatsome-js-js"></script>
+		<script type="text/javascript" src="~/js/woocommerce.js" id="flatsome-theme-woocommerce-js-js"></script>
+
+</body>
